@@ -14,4 +14,4 @@
         // Podríamos tener una propiedad similar para Recepcionista si tuviéramos una entidad Recepcionista,
         // pero por simplicidad, si la recepcionista solo usa el sistema, el rol es suficiente.
     }
-};
+}
