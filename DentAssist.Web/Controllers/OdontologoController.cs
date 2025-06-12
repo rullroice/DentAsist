@@ -20,11 +20,12 @@ namespace DentAssist.Web.Controllers
         }
 
         // GET: Odontologo
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            // En un escenario real, aquí se obtendría el ID del odontólogo logeado
-            // Por ahora, asumiremos un odontólogo de prueba o pasaremos el ID para demostración
-            return View(); // Vista principal del odontólogo
+            // En un escenario real, aquí se filtraría por el odontólogo autenticado
+            // Para evitar que la vista reciba un modelo nulo, cargamos todos los odontólogos
+            var odontologos = await _context.Odontologos.ToListAsync();
+            return View(odontologos); // Vista principal del odontólogo
         }
 
         // GET: Odontologo/MyAgenda
