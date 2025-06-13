@@ -1,0 +1,42 @@
+﻿@model DentAssist.Models.Tratamiento
+
+@{
+    ViewData["Title"] = "Eliminar Tratamiento";
+}
+
+<h1>Eliminar Tratamiento</h1>
+
+<h3>¿Estás seguro de que quieres eliminar este tratamiento del catálogo?</h3>
+<div class="alert alert-warning" role="alert">
+    Ten en cuenta que la eliminación de un tratamiento puede afectar a los planes de tratamiento existentes que lo incluyan.
+</div>
+<div>
+    <h4>Tratamiento</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PrecioEstimado)
+        </dt>
+        <dd class="col-sm-10">
+            @Model.PrecioEstimado.ToString("C")
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary ml-2">Cancelar y Volver al Catálogo</a>
+    </form>
+</div>

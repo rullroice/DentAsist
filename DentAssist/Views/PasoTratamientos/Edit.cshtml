@@ -1,0 +1,70 @@
+﻿@model DentAssist.Models.PasoTratamiento
+
+@{
+    ViewData["Title"] = "Editar Paso de Tratamiento";
+}
+
+<h1>Editar Paso de Tratamiento</h1>
+
+<h4>Paso de Tratamiento</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            @* El Plan de Tratamiento y Tratamiento asociado no deberían cambiarse en Edit, solo mostrarse *@
+            <div class="form-group">
+                <label class="control-label">Plan de Tratamiento</label>
+                <input class="form-control" value="@Model.PlanTratamiento.Paciente.Nombre - Plan #@Model.IdPlanTratamiento" readonly />
+                <input type="hidden" asp-for="IdPlanTratamiento" /> @* Aseguramos que el ID se envíe *@
+            </div>
+            <div class="form-group">
+                <label class="control-label">Tratamiento</label>
+                <input class="form-control" value="@Model.Tratamiento.Nombre" readonly />
+                <input type="hidden" asp-for="IdTratamiento" /> @* Aseguramos que el ID se envíe *@
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Secuencia" class="control-label"></label>
+                <input asp-for="Secuencia" type="number" class="form-control" min="1" />
+                <span asp-validation-for="Secuencia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaEstimada" class="control-label"></label>
+                <input asp-for="FechaEstimada" type="date" class="form-control" />
+                <span asp-validation-for="FechaEstimada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaRealizado" class="control-label"></label>
+                <input asp-for="FechaRealizado" type="date" class="form-control" value="@(Model.FechaRealizado.HasValue? Model.FechaRealizado.Value.ToString("yyyy-MM-dd") : string.Empty)" />
+                <span asp-validation-for="FechaRealizado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Estado" class="control-label"></label>
+                <select asp-for="Estado" class="form-control">
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="Completado">Completado</option>
+                    <option value="Cancelado">Cancelado</option>
+                </select>
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ObservacionesClinicas" class="control-label"></label>
+                <textarea asp-for="ObservacionesClinicas" class="form-control"></textarea>
+                <span asp-validation-for="ObservacionesClinicas" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Guardar Cambios" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary ml-2">Volver al Listado de Pasos</a>
+                <a asp-controller="PlanTratamientos" asp-action="Details" asp-route-id="@Model.IdPlanTratamiento" class="btn btn-info ml-2">Volver al Plan de Tratamiento</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
