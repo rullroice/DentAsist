@@ -1,0 +1,78 @@
+﻿@model IEnumerable<DentAssist.Models.PlanTratamiento>
+
+@{
+    ViewData["Title"] = "Planes de Tratamiento";
+    var selectedPacienteId = ViewBag.SelectedPacienteId as int?;
+}
+
+<h1>Planes de Tratamiento</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo Plan de Tratamiento</a>
+</p>
+
+<form asp-action="Index" method="get" class="form-inline mb-3">
+    <div class="form-group mr-3">
+        <label for="pacienteId" class="sr-only">Paciente</label>
+        <select name="pacienteId" id="pacienteId" class="form-control"
+                asp-items="@(ViewData["PacienteId"] as SelectList)">
+            <option value="">Todos los Pacientes</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-info">Filtrar</button>
+    <a asp-action="Index" class="btn btn-secondary ml-2">Limpiar Filtros</a>
+</form>
+
+<table class="table table-striped table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Paciente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Odontologo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaCreacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ObservacionesGenerales) @* CAMBIO: ObservacionesGenerales *@
+            </th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-controller="Pacientes" asp-action="Details" asp-route-id="@item.Paciente.Id">@item.Paciente.Nombre</a>
+                </td>
+                <td>
+                    <a asp-controller="Odontologos" asp-action="Details" asp-route-id="@item.Odontologo.Id">@item.Odontologo.Nombre</a>
+                </td>
+                <td>
+                    @item.FechaCreacion.ToString("dd/MM/yyyy")
+                </td>
+                <td>
+                    @* Muestra ObservacionesGenerales, manejando si es nula o vacía *@
+                    @if (!string.IsNullOrEmpty(item.ObservacionesGenerales))
+                    {
+                        @Html.DisplayFor(modelItem => item.ObservacionesGenerales)
+                    }
+                    else
+                    {
+                        <span>N/A</span> @* O puedes dejarlo en blanco `<span></span>` *@
+                    }
+                </td>
+                <td>
+                    <div class="btn-group" role="group" aria-label="Acciones de Plan de Tratamiento">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Editar</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Detalles</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Eliminar</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

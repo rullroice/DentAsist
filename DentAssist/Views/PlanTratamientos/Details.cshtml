@@ -1,0 +1,89 @@
+﻿@model DentAssist.Models.PlanTratamiento
+
+@{
+    ViewData["Title"] = "Detalles del Plan de Tratamiento";
+}
+
+<h1>Detalles del Plan de Tratamiento</h1>
+
+<div>
+    <h4>Plan de Tratamiento</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Paciente)
+        </dt>
+        <dd class="col-sm-9">
+            <a asp-controller="Pacientes" asp-action="Details" asp-route-id="@Model.Paciente.Id">@Html.DisplayFor(model => model.Paciente.Nombre)</a>
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Odontologo)
+        </dt>
+        <dd class="col-sm-9">
+            <a asp-controller="Odontologos" asp-action="Details" asp-route-id="@Model.Odontologo.Id">@Html.DisplayFor(model => model.Odontologo.Nombre)</a>
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </dt>
+        <dd class="col-sm-9">
+            @Model.FechaCreacion.ToString("dd/MM/yyyy")
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.ObservacionesGenerales)
+        </dt>
+        <dd class="col-sm-9">
+            @if (!string.IsNullOrEmpty(Model.ObservacionesGenerales))
+            {
+                @Html.DisplayFor(model => model.ObservacionesGenerales)
+            }
+            else
+            {
+                <span>N/A</span>
+            }
+        </dd>
+    </dl>
+</div>
+
+<div class="mt-4">
+    <h2>Pasos del Plan de Tratamiento</h2>
+    <hr />
+    @if (Model.PasosDelPlan != null && Model.PasosDelPlan.Any())
+    {
+        <table class="table table-sm table-striped">
+            <thead class="thead-light">
+                <tr>
+                    <th>Tratamiento</th>
+                    @* Eliminado Costo y Estado hasta tener el modelo PasoTratamiento *@
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var paso in Model.PasosDelPlan.OrderBy(p => p.Id))
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => paso.Tratamiento.Nombre)
+                        </td>
+                        <td>
+                            <a asp-controller="PasoTratamientos" asp-action="Details" asp-route-id="@paso.Id" class="btn btn-sm btn-outline-info">Ver Paso</a> |
+                            <a asp-controller="PasoTratamientos" asp-action="Edit" asp-route-id="@paso.Id" class="btn btn-sm btn-outline-warning">Editar Paso</a> |
+                            <a asp-controller="PasoTratamientos" asp-action="Delete" asp-route-id="@paso.Id" class="btn btn-sm btn-outline-danger">Eliminar Paso</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Este plan de tratamiento no tiene pasos asociados.</p>
+    }
+
+    <a asp-controller="PasoTratamientos" asp-action="Create" asp-route-planTratamientoId="@Model.Id" class="btn btn-info mt-3">Agregar Paso al Plan</a>
+</div>
+
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Editar Plan</a>
+    <a asp-action="Index" class="btn btn-secondary ml-2">Volver al Listado</a>
+    <a asp-action="GenerarPdf" asp-route-id="@Model.Id" class="btn btn-success ml-2" target="_blank">Generar PDF del Plan</a>
+</div>

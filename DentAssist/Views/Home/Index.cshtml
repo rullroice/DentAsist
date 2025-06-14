@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Bienvenido a DentAssist";
+}
+
+<div class="hero-section">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Tu asistente <br> dental 24/7</h1>
+            <p class="hero-subtitle">
+                Conoce a DentAsis,<br>
+                Odontología y Estética de excelencia.
+            </p>
+            <a asp-controller="Turnos" asp-action="Create" class="btn reserva-btn mt-3">Reserva tu hora</a>
+        </div>
+        <div class="hero-image-clip">
+            <img src="~/images/ClinicaImagen.jpg" alt="Clínica dental Providencia">
+        </div>
+    </div>
+</div>
+
+<div class="text-center my-5">
+    <h2 class="hero-subtitle mb-4">Nuestros módulos</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title text-primary">Pacientes</h5>
+                    <p class="card-text">Gestión completa de información de pacientes y su historial.</p>
+                    <a asp-controller="Pacientes" asp-action="Index" class="btn btn-outline-primary mt-auto">Explorar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title text-primary">Odontólogos</h5>
+                    <p class="card-text">Administración de profesionales y sus especialidades.</p>
+                    <a asp-controller="Odontologos" asp-action="Index" class="btn btn-outline-primary mt-auto">Explorar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title text-primary">Turnos y Agenda</h5>
+                    <p class="card-text">Organiza y visualiza citas de forma eficiente.</p>
+                    <a asp-controller="Turnos" asp-action="Index" class="btn btn-outline-primary mt-auto">Explorar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 text-center">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title text-primary">Planes de Tratamiento</h5>
+                    <p class="card-text">Diseña y sigue planes detallados por paciente.</p>
+                    <a asp-controller="PlanTratamientos" asp-action="Index" class="btn btn-outline-primary mt-auto">Explorar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

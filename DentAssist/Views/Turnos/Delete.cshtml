@@ -1,0 +1,62 @@
+﻿@model DentAssist.Models.Turno
+
+@{
+    ViewData["Title"] = "Eliminar Turno";
+}
+
+<h1>Eliminar Turno</h1>
+
+<h3>¿Estás seguro de que quieres eliminar este turno?</h3>
+<div class="alert alert-warning" role="alert">
+    Esta acción eliminará el turno de forma permanente.
+</div>
+<div>
+    <h4>Turno</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.FechaHora)
+        </dt>
+        <dd class="col-sm-9">
+            @Model.FechaHora.ToString("dd/MM/yyyy HH:mm")
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.DuracionMinutos)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.DuracionMinutos) minutos
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+        <dd class="col-sm-9">
+            <span class="badge @(Model.Estado == "Realizado" ? "badge-success" : Model.Estado == "Cancelado" ? "badge-danger" : Model.Estado == "Confirmado" ? "badge-primary" : "badge-secondary")">
+                @Html.DisplayFor(model => model.Estado)
+            </span>
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Paciente)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Paciente.Nombre)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Odontologo)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Odontologo.Nombre)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary ml-2">Cancelar y Volver al Listado</a>
+    </form>
+</div>

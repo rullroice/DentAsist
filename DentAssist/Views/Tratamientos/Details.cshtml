@@ -1,0 +1,36 @@
+﻿@model DentAssist.Models.Tratamiento
+
+@{
+    ViewData["Title"] = "Detalles del Tratamiento";
+}
+
+<h1>Detalles del Tratamiento</h1>
+
+<div>
+    <h4>Tratamiento</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PrecioEstimado)
+        </dt>
+        <dd class="col-sm-10">
+            @Model.PrecioEstimado.ToString("C")
+        </dd>
+    </dl>
+</div>
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary ml-2">Volver al Catálogo</a>
+</div>

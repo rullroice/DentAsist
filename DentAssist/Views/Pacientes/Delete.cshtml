@@ -1,0 +1,54 @@
+﻿@model DentAssist.Models.Paciente
+
+@{
+    ViewData["Title"] = "Eliminar Paciente";
+}
+
+<h1>Eliminar Paciente</h1>
+
+<h3>¿Estás seguro de que quieres eliminar a este paciente?</h3>
+<div class="alert alert-danger" role="alert">
+    <strong>¡Advertencia!</strong> La eliminación de un paciente puede afectar a los planes de tratamiento y turnos asociados.
+</div>
+<div>
+    <h4>Paciente</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RUT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RUT)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary ml-2">Cancelar y Volver al Listado</a>
+    </form>
+</div>
