@@ -18,5 +18,3 @@ Antes de ejecutar el sistema, asegúrate de que los siguientes programas-extensi
   `C:\Users\NombreUsuario\OneDrive\Escritorio\PDF\wkhtmltopdf\bin`
 
 ---
-
-(Agrega aquí si deseas los pasos para clonar, compilar o correr el proyecto.)
