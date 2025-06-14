@@ -1,9 +1,3 @@
-# 📌 Introducción al proyecto
-
-
-
----
-
 # 🛠️ Cómo instalar y ejecutar
 
 
