@@ -18,3 +18,4 @@ Antes de ejecutar el sistema, asegúrate de que los siguientes programas-extensi
   `C:\Users\NombreUsuario\OneDrive\Escritorio\PDF\wkhtmltopdf\bin`
 
 ---
+# 👨‍💻 Guía rápida de uso
