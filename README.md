@@ -1,13 +1,22 @@
 # 🛠️ Cómo instalar y ejecutar
-primero que nada se debe confirmar si estan intsalados los siguientes requisitos en tu sistema:
-.NET SDK: Necesitarás la versión compatible con ASP.NET Core (generalmente .NET 6 o superior).
-SQL Server: Una instancia de SQL Server para la base de datos de la clínica.
-wkhtmltopdf: Para la generación de PDFs, el sistema utiliza esta herramienta externa. Debe estar instalada en tu equipo. Su ruta de instalación, especialmente la carpeta bin (ej. C:\Users\NombreUsuario\OneDrive\Escritorio\PDF\wkhtmltopdf\)
-, es configurada en el código del programa (Program.cs).
 
+Antes de ejecutar el sistema, asegúrate de que los siguientes requisitos estén instalados en tu equipo:
+
+### ✅ Requisitos
+
+- **.NET SDK**  
+  Necesitas tener instalado el SDK de .NET compatible con ASP.NET Core (recomendado: **.NET 6 o superior**).
+
+- **SQL Server**  
+  El sistema requiere una instancia de **SQL Server** para gestionar la base de datos de la clínica.
+
+- **wkhtmltopdf**  
+  Esta herramienta externa se utiliza para la generación de archivos PDF.  
+  Debe estar instalada en tu equipo, y su ruta (especialmente la carpeta `bin`) debe configurarse en el código del programa (`Program.cs`).
+
+  📁 Ejemplo de ruta:  
+  `C:\Users\NombreUsuario\OneDrive\Escritorio\PDF\wkhtmltopdf\bin`
 
 ---
 
-# 👨‍💻 Guía rápida de uso
-
-
+(Agrega aquí si deseas los pasos para clonar, compilar o correr el proyecto.)
