@@ -1,6 +1,6 @@
 # 🛠️ Cómo instalar y ejecutar
 
-Antes de ejecutar el sistema, asegúrate de que los siguientes requisitos estén instalados en tu equipo:
+Antes de ejecutar el sistema, asegúrate de que los siguientes programas-extensiones estén instalados en tu equipo:
 
 ### ✅ Requisitos
 
