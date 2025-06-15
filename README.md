@@ -722,6 +722,39 @@ Con esto se completa la documentación del módulo de **Tratamientos**, el cual 
 
 ---
 
+## Módulo de Turnos
+
+El módulo de **gestión de turnos** permite administrar las citas médicas entre los pacientes y los odontólogos. Esta vista centraliza toda la información relacionada a la programación, seguimiento y estado de cada turno.
+
+---
+
+### Vista principal
+
+#### 📋 Columnas del listado:
+- **Fecha y Hora** del turno
+- **Duración** estimada
+- **Paciente**
+- **Odontólogo**
+- **Estado** (por ejemplo: Realizado, Pendiente, Cancelado)
+- **Descripción**: observaciones o comentarios
+- **Acciones**:
+  - **Editar**
+  - **Detalles**
+  - **Eliminar**
+
+#### Acciones adicionales:
+- **Crear un nuevo turno** (botón destacado en la parte superior derecha)
+
+&nbsp;
+
+
+![Menu de turnos](https://github.com/user-attachments/assets/885f3be7-4c8e-4c5d-ac4f-3de734444ee6)
+
+&nbsp;
+
+---
+
+
 
 
 
