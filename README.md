@@ -246,6 +246,68 @@ Antes de ejecutar la eliminación, el sistema presenta los datos del cliente par
 
 ---
 
+## 📄 Detalles del Cliente
+
+Desde el listado principal de clientes, es posible acceder a la vista detallada de cada uno para consultar su información general, planes de tratamiento y turnos históricos.
+
+### 🧾 Información General
+
+Se muestra la información básica del cliente:
+
+- **Nombre**
+- **RUT**
+- **Teléfono**
+- **Correo electrónico**
+- **Dirección**
+
+También están disponibles dos botones principales:
+
+-  **Editar Cliente**: para modificar sus datos.
+- **Volver al Listado**: para regresar a la vista general.
+
+---
+
+### 🗂️ Planes de Tratamiento
+
+En esta sección se visualiza el plan o los planes asignados al cliente, incluyendo:
+
+- **ID del plan, fecha de creación y profesional que lo creó**
+- **Observaciones generales**
+- **Pasos del plan**, con detalles como:
+  - Número de secuencia
+  - Tipo de tratamiento
+  - Fecha estimada y fecha realizada
+  - Estado del paso (ej. Completado)
+  - Observaciones
+
+Acciones disponibles:
+
+-  **Editar Plan**
+-  **Exportar PDF** del plan completo
+
+---
+
+### 🕒 Historial de Turnos
+
+Se listan todos los turnos anteriores del cliente, con la siguiente información:
+
+- Fecha y hora
+- Duración
+- Odontólogo asignado
+- Estado del turno
+- Descripción
+- Acciones: **Editar** o ver **Detalles**
+
+&nbsp;
+
+
+![Opcion - Detales de Paciente](https://github.com/user-attachments/assets/59c6ffb6-4b22-4dac-b7d8-354faea2733f)
+
+&nbsp;
+
+---
+
+
 
 
 
