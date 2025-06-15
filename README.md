@@ -150,7 +150,7 @@ Desde este módulo podrás:
 
 ---
 
-## 🧑‍💼 Módulo de Clientes
+## 🧑‍💼 Módulo de Listado de Clientes
 
 El módulo de **Clientes** permite visualizar y administrar la información básica de todas las personas registradas en el sistema.
 
