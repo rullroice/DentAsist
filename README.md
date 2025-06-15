@@ -357,6 +357,33 @@ Desde esta vista se puede consultar, filtrar y gestionar todos los **planes de t
 
 ---
 
+## 🆕 Crear Nuevo Plan de Tratamiento
+
+Esta vista permite registrar un nuevo plan de tratamiento desde cero, asociándolo a un paciente y a un odontólogo específico.
+
+### Campos del formulario:
+
+- **Paciente**: Selección del cliente al que se asignará el plan.
+- **Odontólogo**: Profesional responsable del tratamiento.
+- **Fecha de creación**: Fecha en la que se genera el plan.
+- **Observaciones generales**: Comentarios o notas iniciales sobre el enfoque del tratamiento.
+
+Una vez completados los datos, se puede:
+
+- ➕ **Crear plan**: para guardar el nuevo registro.
+- 🔙 **Volver al Listado**: para regresar a la vista general sin crear el plan.
+
+
+&nbsp;
+
+
+![Opcion - Crear un plan](https://github.com/user-attachments/assets/3041f1ce-9c57-4ca8-86cc-c463f8f421ce)
+
+&nbsp;
+
+---
+
+
 
 
 
