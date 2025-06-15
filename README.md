@@ -19,12 +19,20 @@ Antes de ejecutar el sistema, asegúrate de que los siguientes programas-extensi
 
 ---
 # 👨‍💻 Guía rápida de uso
+Al ingresar al sistema, podrás visualizar el **menú principal**, donde se encuentran las diferentes opciones disponibles para la navegación y operación del sistema.
 
-Al ingresar al sistema, podrás visualizar el menú principal, donde se encuentran las diferentes opciones disponibles para la navegación y operación del sistema.
+&nbsp;
 
-![Principal - Menu](https://github.com/user-attachments/assets/7dd3e4c3-363e-4f63-a9cf-dbb655d9161e)
+[![Principal - Menú](https://github.com/user-attachments/assets/7dd3e4c3-363e-4f63-a9cf-dbb65d59161e)](https://github.com/user-attachments/assets/7dd3e4c3-363e-4f63-a9cf-dbb65d59161e)
 
-Más abajo, tendrás acceso a los distintos módulos de registro y visualización que el sistema ofrece para facilitar tus tareas.
+&nbsp;
 
-![Modulos - Menu](https://github.com/user-attachments/assets/c69c61db-4080-428a-9a1d-103af3d85e87)
+---
 
+Más abajo, tendrás acceso a los distintos **módulos de registro y visualización** que el sistema ofrece para facilitar tus tareas.
+
+&nbsp;
+
+[![Módulos - Menú](https://github.com/user-attachments/assets/c69c61db-4080-428a-9a1d-103af3d85e87)](https://github.com/user-attachments/assets/c69c61db-4080-428a-9a1d-103af3d85e87)
+
+&nbsp;
