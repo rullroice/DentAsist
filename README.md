@@ -807,6 +807,40 @@ Desde esta sección puedes modificar la información previamente registrada de u
 
 ---
 
+## Eliminar Turno
+
+En esta pantalla se confirma la eliminación definitiva de un turno. Es una acción irreversible, por lo que el sistema muestra un resumen con los datos del turno para evitar errores.
+
+---
+
+
+---
+
+### Información mostrada
+
+- **Fecha y hora**
+- **Duración**
+- **Estado**
+- **Descripción**
+- **Paciente asignado**
+- **Odontólogo asignado**
+
+---
+
+### Acciones disponibles
+
+- **Eliminar**: borra el turno permanentemente.
+- **Cancelar y volver al listado**: regresa al listado de turnos sin realizar cambios.
+
+&nbsp;
+
+![Opcion - Eliminar un turno](https://github.com/user-attachments/assets/cfbf335d-4748-4bc3-8c62-d282df441d3a)
+
+&nbsp;
+
+---
+
+
 
 
 
