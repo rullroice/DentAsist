@@ -475,6 +475,49 @@ Además, puedes:
 
 ---
 
+## ✅ Fin del Módulo de Planes
+
+Con esto concluye el recorrido por el módulo de **Planes de Tratamiento**, donde se mostró cómo crear, editar, visualizar y gestionar cada uno de sus pasos.
+
+---
+
+## 📈 Módulo de Progreso de Tratamiento
+
+Este módulo permite visualizar el **estado de avance de los tratamientos** aplicados a los pacientes dentro del sistema. Es una herramienta clave para el seguimiento clínico.
+
+### Funcionalidades principales:
+
+- **Añadir nuevo paso**: agrega una nueva etapa de tratamiento directamente desde esta vista.
+
+---
+
+### Información mostrada por cada paso:
+
+- **Paciente**
+- **Tratamiento**
+- **Secuencia (orden dentro del plan)**
+- **Fecha estimada y realizada**
+- **Estado del tratamiento** (Ej.: Completado)
+- **Observaciones clínicas** registradas
+
+---
+
+### Acciones disponibles:
+
+- **Editar**: modifica los datos del paso de tratamiento.
+- **Detalles**: permite ver el paso de forma ampliada.
+- **Eliminar**: elimina ese paso del registro.
+
+&nbsp;
+
+
+![Menu - Progreso](https://github.com/user-attachments/assets/c4b860eb-dbc5-4d87-935d-8b00939460c4)
+
+&nbsp;
+
+---
+
+
 
 
 
