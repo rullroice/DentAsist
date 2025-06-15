@@ -68,7 +68,7 @@ namespace DentAssist.Migrations
                     IdPaciente = table.Column<int>(type: "int", nullable: false),
                     IdOdontologo = table.Column<int>(type: "int", nullable: false),
                     FechaCreacion = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    ObservacionesGenerales = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false)
+                    ObservacionesGenerales = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -98,7 +98,7 @@ namespace DentAssist.Migrations
                     IdPaciente = table.Column<int>(type: "int", nullable: false),
                     IdOdontologo = table.Column<int>(type: "int", nullable: false),
                     Estado = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Descripcion = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false)
+                    Descripcion = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -129,7 +129,7 @@ namespace DentAssist.Migrations
                     FechaEstimada = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaRealizado = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Estado = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    ObservacionesClinicas = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false)
+                    ObservacionesClinicas = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true)
                 },
                 constraints: table =>
                 {

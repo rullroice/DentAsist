@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rauli\\Desktop\\DentAssist\\DentAssist\\DentAssist.csproj": {}
+    "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\DentAssist.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rauli\\Desktop\\DentAssist\\DentAssist\\DentAssist.csproj": {
+    "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\DentAssist.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rauli\\Desktop\\DentAssist\\DentAssist\\DentAssist.csproj",
+        "projectUniqueName": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\DentAssist.csproj",
         "projectName": "DentAssist",
-        "projectPath": "C:\\Users\\rauli\\Desktop\\DentAssist\\DentAssist\\DentAssist.csproj",
+        "projectPath": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\DentAssist.csproj",
         "packagesPath": "C:\\Users\\rauli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rauli\\Desktop\\DentAssist\\DentAssist\\obj\\",
+        "outputPath": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

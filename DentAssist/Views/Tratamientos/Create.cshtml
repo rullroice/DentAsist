@@ -4,37 +4,49 @@
     ViewData["Title"] = "Registrar Nuevo Tratamiento";
 }
 
-<h1>Registrar Nuevo Tratamiento</h1>
+<div class="container main-content pt-4">
+    <!-- Título y botón de volver -->
+    <div class="d-flex align-items-center justify-content-between flex-wrap mb-4">
+        <h2 class="mb-0 text-primary">Registrar un nuevo tratamiento</h2>
+        <a asp-action="Index" class="btn btn-secondary">Volver al Catálogo</a>
+    </div>
 
-<h4>Tratamiento</h4>
-<hr />
-<div class="row">
-    <div class="col-md-6">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
-                <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
+    <div class="row">
+        <div class="col-md-7 col-lg-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h4 class="card-title text-primary mb-4">Datos del tratamiento</h4>
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="form-group">
+                            <label asp-for="Nombre"></label>
+                            <input asp-for="Nombre" class="form-control" />
+                            <span asp-validation-for="Nombre" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="Descripcion"></label>
+                            <textarea asp-for="Descripcion" class="form-control"></textarea>
+                            <span asp-validation-for="Descripcion" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="PrecioEstimado" class="control-label">Costo</label>
+                            <input asp-for="PrecioEstimado" class="form-control" type="number" step="0.01" min="0" />
+                            <span asp-validation-for="PrecioEstimado" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <input type="submit" value="Registrar" class="btn btn-primary" />
+                            
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Descripcion" class="control-label"></label>
-                <textarea asp-for="Descripcion" class="form-control"></textarea>
-                <span asp-validation-for="Descripcion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PrecioEstimado" class="control-label"></label>
-                <input asp-for="PrecioEstimado" class="form-control" type="number" step="0.01" min="0" /> @* Tipo numérico y paso para decimales *@
-                <span asp-validation-for="PrecioEstimado" class="text-danger"></span>
-            </div>
-            <div class="form-group mt-3">
-                <input type="submit" value="Registrar" class="btn btn-primary" />
-                <a asp-action="Index" class="btn btn-secondary ml-2">Volver al Catálogo</a>
-            </div>
-        </form>
+        </div>
     </div>
 </div>
-
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

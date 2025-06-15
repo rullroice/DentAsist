@@ -1,18 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rauli\\Desktop\\DentAssist\\",
+  "WorkspaceRootPath": "C:\\Users\\rauli\\Desktop\\DentAsist\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentassist\\dentassist\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentasist\\dentassist\\views\\plantratamientos\\exportarpdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\views\\plantratamientos\\exportarpdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentassist\\dentassist\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentasist\\dentassist\\views\\tratamientos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\views\\tratamientos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentasist\\dentassist\\views\\pasotratamientos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\views\\pasotratamientos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentasist\\dentassist\\views\\pasotratamientos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\views\\pasotratamientos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentasist\\dentassist\\views\\plantratamientos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\views\\plantratamientos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentasist\\dentassist\\views\\pacientes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\views\\pacientes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentasist\\dentassist\\views\\odontologos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\views\\odontologos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentasist\\dentassist\\views\\odontologos\\fichaspacientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\views\\odontologos\\fichaspacientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentasist\\dentassist\\views\\odontologos\\agenda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\views\\odontologos\\agenda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentasist\\dentassist\\views\\tratamientos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\views\\tratamientos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentasist\\dentassist\\views\\plantratamientos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\views\\plantratamientos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentasist\\dentassist\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|c:\\users\\rauli\\desktop\\dentassist\\dentassist\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{167BE257-42E9-494C-BF5E-84DFDEF1D908}|DentAssist\\DentAssist.csproj|solutionrelative:dentassist\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +63,157 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAssist\\DentAssist\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "DentAssist\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAssist\\DentAssist\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "DentAssist\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAA9AAAAAAAAAA==",
+              "Title": "ExportarPdf.cshtml",
+              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\PlanTratamientos\\ExportarPdf.cshtml",
+              "RelativeDocumentMoniker": "DentAssist\\Views\\PlanTratamientos\\ExportarPdf.cshtml",
+              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\PlanTratamientos\\ExportarPdf.cshtml",
+              "RelativeToolTip": "DentAssist\\Views\\PlanTratamientos\\ExportarPdf.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-14T03:36:04.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAssist\\DentAssist\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "DentAssist\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAssist\\DentAssist\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "DentAssist\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKsAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-14T03:25:19.901Z",
+              "WhenOpened": "2025-06-15T04:21:09.079Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAssist\\DentAssist\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "DentAssist\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAssist\\DentAssist\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "DentAssist\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\PasoTratamientos\\Index.cshtml",
+              "RelativeDocumentMoniker": "DentAssist\\Views\\PasoTratamientos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\PasoTratamientos\\Index.cshtml",
+              "RelativeToolTip": "DentAssist\\Views\\PasoTratamientos\\Index.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-13T00:38:30.924Z",
+              "WhenOpened": "2025-06-15T04:18:22.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\PasoTratamientos\\Create.cshtml",
+              "RelativeDocumentMoniker": "DentAssist\\Views\\PasoTratamientos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\PasoTratamientos\\Create.cshtml",
+              "RelativeToolTip": "DentAssist\\Views\\PasoTratamientos\\Create.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAGQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T04:04:15.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\Tratamientos\\Create.cshtml",
+              "RelativeDocumentMoniker": "DentAssist\\Views\\Tratamientos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\Tratamientos\\Create.cshtml",
+              "RelativeToolTip": "DentAssist\\Views\\Tratamientos\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T04:07:24.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\PlanTratamientos\\Create.cshtml",
+              "RelativeDocumentMoniker": "DentAssist\\Views\\PlanTratamientos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\PlanTratamientos\\Create.cshtml",
+              "RelativeToolTip": "DentAssist\\Views\\PlanTratamientos\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T04:04:21.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\Pacientes\\Details.cshtml",
+              "RelativeDocumentMoniker": "DentAssist\\Views\\Pacientes\\Details.cshtml",
+              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\Pacientes\\Details.cshtml",
+              "RelativeToolTip": "DentAssist\\Views\\Pacientes\\Details.cshtml",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T04:02:23.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\Odontologos\\Details.cshtml",
+              "RelativeDocumentMoniker": "DentAssist\\Views\\Odontologos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\Odontologos\\Details.cshtml",
+              "RelativeToolTip": "DentAssist\\Views\\Odontologos\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T03:59:32.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FichasPacientes.cshtml",
+              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\Odontologos\\FichasPacientes.cshtml",
+              "RelativeDocumentMoniker": "DentAssist\\Views\\Odontologos\\FichasPacientes.cshtml",
+              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\Odontologos\\FichasPacientes.cshtml",
+              "RelativeToolTip": "DentAssist\\Views\\Odontologos\\FichasPacientes.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T03:58:06.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Agenda.cshtml",
+              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\Odontologos\\Agenda.cshtml",
+              "RelativeDocumentMoniker": "DentAssist\\Views\\Odontologos\\Agenda.cshtml",
+              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\Odontologos\\Agenda.cshtml",
+              "RelativeToolTip": "DentAssist\\Views\\Odontologos\\Agenda.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T03:44:40.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\Tratamientos\\Index.cshtml",
+              "RelativeDocumentMoniker": "DentAssist\\Views\\Tratamientos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\Tratamientos\\Index.cshtml",
+              "RelativeToolTip": "DentAssist\\Views\\Tratamientos\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T03:52:45.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\PlanTratamientos\\Index.cshtml",
+              "RelativeDocumentMoniker": "DentAssist\\Views\\PlanTratamientos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\Views\\PlanTratamientos\\Index.cshtml",
+              "RelativeToolTip": "DentAssist\\Views\\PlanTratamientos\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T03:50:46.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "DentAssist\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\rauli\\Desktop\\DentAsist\\DentAssist\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "DentAssist\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-14T03:25:19.901Z",
               "EditorCaption": ""
             }
           ]

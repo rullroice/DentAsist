@@ -5,87 +5,107 @@
     var planTratamientoId = ViewBag.PlanTratamientoId as int?; // Viene si se agrega desde el detalle del plan
 }
 
-<h1>Añadir Nuevo Paso de Tratamiento</h1>
+<div class="container main-content pt-4">
+    <!-- Título y botón de volver -->
+    <div class="d-flex align-items-center justify-content-between flex-wrap mb-4">
+        <h2 class="mb-0 text-primary">Añadir un progreso al tratamiento</h2>
+        @if (planTratamientoId.HasValue)
+        {
+            <a asp-controller="PlanTratamientos" asp-action="Details" asp-route-id="@planTratamientoId.Value" class="btn btn-secondary">Volver al Plan</a>
+        }
+        else
+        {
+            <a asp-action="Index" class="btn btn-secondary">Volver al Listado</a>
+        }
+    </div>
 
-<h4>Paso de Tratamiento</h4>
-<hr />
-<div class="row">
-    <div class="col-md-6">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row">
+        <div class="col-md-7 col-lg-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h4 class="card-title text-primary mb-4">Progreso del Tratamiento</h4>
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-            @* Si venimos desde el detalle de un Plan, el IdPlanTratamiento ya viene preseleccionado o como hidden *@
-            @if (planTratamientoId.HasValue)
-            {
-                <input type="hidden" asp-for="IdPlanTratamiento" value="@planTratamientoId.Value" />
-                <div class="form-group">
-                    <label class="control-label">Plan de Tratamiento</label>
-                    <input class="form-control" value="@(ViewBag.PlanTratamientoInfo ?? "Información no disponible")" readonly />
+                        @* Selector u oculto de Plan de Tratamiento *@
+                        @if (planTratamientoId.HasValue)
+                        {
+                            <input type="hidden" asp-for="IdPlanTratamiento" value="@planTratamientoId.Value" />
+                            <div class="form-group">
+                                <label class="control-label">Plan de Tratamiento</label>
+                                <input class="form-control" value="@(ViewBag.PlanTratamientoInfo ?? "Información no disponible")" readonly />
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="form-group">
+                                <label asp-for="IdPlanTratamiento">Plan de Tratamiento</label>
+                                <select asp-for="IdPlanTratamiento" class="form-control" asp-items="ViewBag.IdPlanTratamiento">
+                                    <option value="">Seleccionar plan de tratamiento</option>
+                                </select>
+                                <span asp-validation-for="IdPlanTratamiento" class="text-danger"></span>
+                            </div>
+                        }
+
+                        <div class="form-group mt-3">
+                            <label asp-for="IdTratamiento">Tratamiento</label>
+                            <select asp-for="IdTratamiento" class="form-control" asp-items="ViewBag.IdTratamiento">
+                                <option value="">Seleccionar tratamiento</option>
+                            </select>
+                            <span asp-validation-for="IdTratamiento" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="Secuencia">Secuencia</label>
+                            <input asp-for="Secuencia" type="number" class="form-control" min="1" />
+                            <span asp-validation-for="Secuencia" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="FechaEstimada">Fecha estimada</label>
+                            <input asp-for="FechaEstimada" type="date" class="form-control" />
+                            <span asp-validation-for="FechaEstimada" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="FechaRealizado">Fecha realizado</label>
+                            <input asp-for="FechaRealizado" type="date" class="form-control" value="@(Model.FechaRealizado.HasValue? Model.FechaRealizado.Value.ToString("yyyy-MM-dd") : string.Empty)" />
+                            <span asp-validation-for="FechaRealizado" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="Estado">Estado</label>
+                            <select asp-for="Estado" class="form-control">
+                                <option value="Pendiente">Pendiente</option>
+                                <option value="Completado">Completado</option>
+                                <option value="Cancelado">Cancelado</option>
+                            </select>
+                            <span asp-validation-for="Estado" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="ObservacionesClinicas">Observaciones clínicas</label>
+                            <textarea asp-for="ObservacionesClinicas" class="form-control"></textarea>
+                            <span asp-validation-for="ObservacionesClinicas" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <input type="submit" value="Añadir Paso" class="btn btn-primary" />
+                            @if (planTratamientoId.HasValue)
+                            {
+                                <a asp-controller="PlanTratamientos" asp-action="Details" asp-route-id="@planTratamientoId.Value" class="btn btn-outline-secondary ml-3">Cancelar</a>
+                            }
+                            else
+                            {
+                                <a asp-action="Index" class="btn btn-outline-secondary ml-3">Cancelar</a>
+                            }
+                        </div>
+                    </form>
                 </div>
-            }
-            else
-            {
-                <div class="form-group">
-                    <label asp-for="IdPlanTratamiento" class="control-label"></label>
-                    <select asp-for="IdPlanTratamiento" class="form-control" asp-items="ViewBag.IdPlanTratamiento">
-                        <option value="">Seleccionar Plan de Tratamiento</option>
-                    </select>
-                    <span asp-validation-for="IdPlanTratamiento" class="text-danger"></span>
-                </div>
-            }
-
-            <div class="form-group mt-3">
-                <label asp-for="IdTratamiento" class="control-label"></label>
-                <select asp-for="IdTratamiento" class="form-control" asp-items="ViewBag.IdTratamiento">
-                    <option value="">Seleccionar Tratamiento</option>
-                </select>
-                <span asp-validation-for="IdTratamiento" class="text-danger"></span>
             </div>
-            <div class="form-group mt-3">
-                <label asp-for="Secuencia" class="control-label"></label>
-                <input asp-for="Secuencia" type="number" class="form-control" min="1" />
-                <span asp-validation-for="Secuencia" class="text-danger"></span>
-            </div>
-            <div class="form-group mt-3">
-                <label asp-for="FechaEstimada" class="control-label"></label>
-                <input asp-for="FechaEstimada" type="date" class="form-control" />
-                <span asp-validation-for="FechaEstimada" class="text-danger"></span>
-            </div>
-            <div class="form-group mt-3">
-                <label asp-for="FechaRealizado" class="control-label"></label>
-                <input asp-for="FechaRealizado" type="date" class="form-control" value="@(Model.FechaRealizado.HasValue? Model.FechaRealizado.Value.ToString("yyyy-MM-dd") : string.Empty)" />
-                <span asp-validation-for="FechaRealizado" class="text-danger"></span>
-            </div>
-            <div class="form-group mt-3">
-                <label asp-for="Estado" class="control-label"></label>
-                <select asp-for="Estado" class="form-control">
-                    <option value="Pendiente">Pendiente</option>
-                    <option value="Completado">Completado</option>
-                    <option value="Cancelado">Cancelado</option>
-                </select>
-                <span asp-validation-for="Estado" class="text-danger"></span>
-            </div>
-            <div class="form-group mt-3">
-                <label asp-for="ObservacionesClinicas" class="control-label"></label>
-                <textarea asp-for="ObservacionesClinicas" class="form-control"></textarea>
-                <span asp-validation-for="ObservacionesClinicas" class="text-danger"></span>
-            </div>
-            <div class="form-group mt-3">
-                <input type="submit" value="Añadir Paso" class="btn btn-primary" />
-                @* Volver al listado general de pasos o al detalle del plan específico *@
-                @if (planTratamientoId.HasValue)
-                {
-                    <a asp-controller="PlanTratamientos" asp-action="Details" asp-route-id="@planTratamientoId.Value" class="btn btn-secondary ml-2">Volver al Plan</a>
-                }
-                else
-                {
-                    <a asp-action="Index" class="btn btn-secondary ml-2">Volver al Listado</a>
-                }
-            </div>
-        </form>
+        </div>
     </div>
 </div>
-
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

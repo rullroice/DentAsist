@@ -4,46 +4,58 @@
     ViewData["Title"] = "Crear Plan de Tratamiento";
 }
 
-<h1>Crear Nuevo Plan de Tratamiento</h1>
+<div class="container main-content pt-4">
+    <!-- Título y botón de volver -->
+    <div class="d-flex align-items-center justify-content-between flex-wrap mb-4">
+        <h2 class="mb-0 text-primary">Crear nuevo plan de tratamiento</h2>
+        <a asp-action="Index" class="btn btn-secondary">Volver al Listado</a>
+    </div>
 
-<h4>PlanTratamiento</h4>
-<hr />
-<div class="row">
-    <div class="col-md-6">
-        <form asp-action="Create">
-            <div class="text-danger" asp-validation-summary="All"></div> @* ¡IMPORTANTE! Mostrará todos los errores aquí *@
-            <div class="form-group">
-                <label asp-for="IdPaciente" class="control-label"></label>
-                <select asp-for="IdPaciente" class="form-control" asp-items="ViewBag.IdPaciente">
-                    <option value="">-- Seleccionar Paciente --</option> @* Opción por defecto clara *@
-                </select>
-                <span asp-validation-for="IdPaciente" class="text-danger"></span>
+    <div class="row">
+        <div class="col-md-7 col-lg-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h4 class="card-title text-primary mb-4">Datos del plan de tratamiento</h4>
+                    <form asp-action="Create">
+                        <div class="text-danger mb-3" asp-validation-summary="All"></div>
+
+                        <div class="form-group">
+                            <label asp-for="IdPaciente">Paciente</label>
+                            <select asp-for="IdPaciente" class="form-control" asp-items="ViewBag.IdPaciente">
+                                <option value="">-- Seleccionar Paciente --</option>
+                            </select>
+                            <span asp-validation-for="IdPaciente" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="IdOdontologo">Odontólogo</label>
+                            <select asp-for="IdOdontologo" class="form-control" asp-items="ViewBag.IdOdontologo">
+                                <option value="">-- Seleccionar Odontólogo --</option>
+                            </select>
+                            <span asp-validation-for="IdOdontologo" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="FechaCreacion">Fecha de creación</label>
+                            <input asp-for="FechaCreacion" type="date" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                            <span asp-validation-for="FechaCreacion" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="ObservacionesGenerales">Observaciones generales</label>
+                            <textarea asp-for="ObservacionesGenerales" class="form-control" rows="5"></textarea>
+                            <span asp-validation-for="ObservacionesGenerales" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <input type="submit" value="Crear plan" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group mt-3">
-                <label asp-for="IdOdontologo" class="control-label"></label>
-                <select asp-for="IdOdontologo" class="form-control" asp-items="ViewBag.IdOdontologo">
-                    <option value="">-- Seleccionar Odontólogo --</option> @* Opción por defecto clara *@
-                </select>
-                <span asp-validation-for="IdOdontologo" class="text-danger"></span>
-            </div>
-            <div class="form-group mt-3">
-                <label asp-for="FechaCreacion" class="control-label"></label>
-                <input asp-for="FechaCreacion" type="date" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" /> @* Valor por defecto a la fecha actual *@
-                <span asp-validation-for="FechaCreacion" class="text-danger"></span>
-            </div>
-            <div class="form-group mt-3">
-                <label asp-for="ObservacionesGenerales" class="control-label"></label>
-                <textarea asp-for="ObservacionesGenerales" class="form-control" rows="5"></textarea>
-                <span asp-validation-for="ObservacionesGenerales" class="text-danger"></span>
-            </div>
-            <div class="form-group mt-3">
-                <input type="submit" value="Crear Plan" class="btn btn-primary" />
-                <a asp-action="Index" class="btn btn-secondary ml-2">Volver al Listado</a>
-            </div>
-        </form>
+        </div>
     </div>
 </div>
-
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

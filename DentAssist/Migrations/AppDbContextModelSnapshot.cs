@@ -125,7 +125,6 @@ namespace DentAssist.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ObservacionesClinicas")
-                        .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
@@ -159,7 +158,6 @@ namespace DentAssist.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ObservacionesGenerales")
-                        .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
@@ -207,7 +205,6 @@ namespace DentAssist.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Descripcion")
-                        .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
