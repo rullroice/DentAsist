@@ -64,5 +64,26 @@ Además, desde esta misma pantalla se pueden realizar acciones como **editar** l
 
 ---
 
+## 🧑‍⚕️ Detalles del Odontólogo
+
+Al seleccionar un odontólogo específico desde el listado general, se accede a una **vista detallada** con toda su información profesional, como nombre, matrícula, especialidad y correo electrónico.
+
+Desde esta pantalla, también es posible:
+
+- **Editar los datos del profesional**
+- Consultar su **agenda semanal**
+- Ver los **pacientes asignados**
+- Visualizar los **turnos asociados**
+- Acceder a los **planes de tratamiento creados** para cada paciente, con opción de ver detalles, editar o generar el archivo en PDF
+
+&nbsp;
+
+![Opcion - Detalles](https://github.com/user-attachments/assets/3f91e2b5-5d8b-4099-8e73-2a136a4e7c5d)
+
+&nbsp;
+
+---
+
+
 
 
