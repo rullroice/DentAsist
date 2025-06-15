@@ -437,6 +437,45 @@ Cuando se selecciona la opción **Eliminar** desde el listado de planes, el sist
 
 ---
 
+## 📑 Detalles del Plan de Tratamiento
+
+Desde esta vista puedes consultar y administrar un plan de tratamiento específico, con toda su información general y los pasos que lo componen.
+
+### 🧾 Datos del plan
+
+Se muestran los datos principales:
+
+- **Paciente**
+- **Odontólogo responsable**
+- **Fecha de creación**
+- **Observaciones generales**
+
+---
+
+### 🪜 Pasos del plan de tratamiento
+
+Aquí se listan los tratamientos (o pasos) que conforman el plan. Para cada uno puedes:
+
+- **Ver Paso**: accede a los detalles completos del tratamiento.
+- **Editar Paso**: modifica información específica del tratamiento.
+- **Eliminar Paso**: elimina este paso del plan.
+
+Además, puedes:
+
+-  **Agregar paso al plan**: añadir nuevos tratamientos al plan existente.
+-  **Editar plan**: volver a la vista de edición general del plan.
+-  **Generar PDF del plan**: descarga un documento con todo el contenido del plan, ideal para impresión o respaldo.
+
+&nbsp;
+
+
+![Opcion - Detalles](https://github.com/user-attachments/assets/519848d0-ad33-41b5-9e08-fa2c1232e4ad)
+
+&nbsp;
+
+---
+
+
 
 
 
