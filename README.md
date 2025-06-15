@@ -19,6 +19,12 @@ Antes de ejecutar el sistema, asegúrate de que los siguientes programas-extensi
 
 ---
 # 👨‍💻 Guía rápida de uso
-Nada mas entrar se visualiza el menu principal 
+
+Al ingresar al sistema, podrás visualizar el menú principal, donde se encuentran las diferentes opciones disponibles para la navegación y operación del sistema.
 
 ![Principal - Menu](https://github.com/user-attachments/assets/7dd3e4c3-363e-4f63-a9cf-dbb655d9161e)
+
+Más abajo, tendrás acceso a los distintos módulos de registro y visualización que el sistema ofrece para facilitar tus tareas.
+
+![Modulos - Menu](https://github.com/user-attachments/assets/c69c61db-4080-428a-9a1d-103af3d85e87)
+
