@@ -695,6 +695,34 @@ Cuando se intenta eliminar un tratamiento desde el listado principal, el sistema
 
 ---
 
+## Detalles del Tratamiento
+
+Desde esta vista puedes consultar toda la información registrada de un tratamiento en particular. Es una sección de solo lectura, útil para revisar o verificar datos sin riesgo de edición accidental.
+
+
+---
+
+### Acciones disponibles:
+
+- **Editar**: redirige al formulario de edición del tratamiento.
+- **Volver al catálogo**: regresa al listado general de tratamientos registrados.
+
+&nbsp;
+
+
+![Opcion - Detalles](https://github.com/user-attachments/assets/f3ff3ea0-5098-4431-a27b-3f5b244d8647)
+
+&nbsp;
+
+---
+
+## ✅ Fin del Módulo de Tratamientos
+
+Con esto se completa la documentación del módulo de **Tratamientos**, el cual permite administrar el catálogo de procedimientos clínicos que pueden ser asignados a los planes de tratamiento de los pacientes.
+
+---
+
+
 
 
 
