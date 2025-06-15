@@ -517,6 +517,35 @@ Este módulo permite visualizar el **estado de avance de los tratamientos** apli
 
 ---
 
+## Añadir Paso de Tratamiento
+
+Esta vista permite registrar un nuevo **paso clínico** dentro de un plan de tratamiento específico, detallando su contenido, estado y fechas relevantes.
+
+### Campos del formulario:
+
+- **Plan de Tratamiento**: Plan al cual se añadirá el paso.
+- **Tratamiento**: tipo de tratamiento a realizar.
+- **Secuencia**: número que define el orden del paso dentro del plan (por ejemplo: 1, 2, 3...).
+- **Fecha estimada**: fecha programada en la que se espera realizar el tratamiento.
+- **Fecha realizado**: fecha efectiva en la que se completó el procedimiento (puede quedar vacía si está pendiente).
+- **Estado**: permite seleccionar el estado del paso (ej. Pendiente, En curso, Completado).
+- **Observaciones clínicas**: campo libre para registrar comentarios relevantes, evolución del paciente u otra información médica.
+
+### Acciones disponibles:
+
+- **Añadir Paso**: guarda la nueva etapa de tratamiento en el sistema.
+- **Cancelar**: abandona la operación y vuelve a la vista anterior sin guardar.
+
+&nbsp;
+
+
+![Opcion - Añadir un nuevo paso](https://github.com/user-attachments/assets/e0152cc2-2db3-427e-99c3-797be2ad223d)
+
+&nbsp;
+
+---
+
+
 
 
 
