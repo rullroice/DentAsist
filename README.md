@@ -568,6 +568,31 @@ Esta pantalla permite consultar toda la información relacionada a un paso espec
 
 ---
 
+## 🗑️ Eliminar Paso del Plan de Tratamiento
+
+Esta vista se muestra cuando el usuario decide eliminar un paso específico del plan de tratamiento. Se trata de una acción crítica y definitiva.
+
+
+---
+
+---
+
+### Acciones disponibles:
+
+- **Eliminar**: confirma la eliminación del paso.
+- **Cancelar y volver al listado de pasos**: aborta la operación sin cambios.
+- **Volver al plan de tratamiento**: regresa a la vista general del plan.
+
+&nbsp;
+
+
+![Opcion - Eliminar un nuevo paso](https://github.com/user-attachments/assets/0c98decf-f06d-4153-9289-f6aed4258414)
+
+&nbsp;
+
+---
+
+
 
 
 
