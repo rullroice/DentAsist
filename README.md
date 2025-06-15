@@ -674,6 +674,28 @@ Desde esta vista es posible modificar los datos de un tratamiento previamente re
 
 ---
 
+## Eliminar Tratamiento del Catálogo
+
+Cuando se intenta eliminar un tratamiento desde el listado principal, el sistema muestra esta pantalla de confirmación. Esto asegura que el usuario sea consciente del impacto de esta acción.
+
+
+---
+
+### Acciones disponibles:
+
+- **Eliminar**: elimina el tratamiento de forma definitiva del catálogo.
+- **Cancelar y volver al catálogo**: regresa al listado sin ejecutar cambios.
+
+&nbsp;
+
+
+![Opcion - Eliminar](https://github.com/user-attachments/assets/7372e661-e7d2-41ad-a2df-fb071d9d39dd)
+
+&nbsp;
+
+---
+
+
 
 
 
