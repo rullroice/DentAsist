@@ -307,6 +307,57 @@ Se listan todos los turnos anteriores del cliente, con la siguiente información
 
 ---
 
+## ✅ Fin del Módulo de Clientes
+
+Con esto concluye el recorrido por el módulo de **Clientes**, donde se explicó cómo registrar, editar, eliminar y consultar a los clientes dentro del sistema, así como su relación con turnos y planes de tratamiento.
+
+---
+
+## 🗂️ Módulo de Planes
+
+El módulo de **Planes** permite gestionar de forma centralizada los distintos **planes de tratamiento** asignados a los clientes. Desde aquí es posible crear nuevos planes, consultar su contenido, editar su progreso y exportarlos en formato PDF.
+
+Cada plan puede incluir:
+
+- Observaciones generales del profesional tratante.
+- Fecha de creacion.
+- Nombre del paciente.
+- Nombre del odontologo.
+- acciones que deseas realizar.
+
+&nbsp;
+
+---
+
+## 📋 Listado de Planes de Tratamiento
+
+Desde esta vista se puede consultar, filtrar y gestionar todos los **planes de tratamiento** registrados en el sistema.
+
+### Funcionalidades principales:
+
+- **Crear Nuevo Plan de Tratamiento**
+- 📄 **Listado detallado**: muestra la siguiente información para cada plan:
+  - Paciente
+  - Odontólogo asignado
+  - Fecha de creación del plan
+  - Observaciones generales
+
+### Acciones disponibles por cada registro:
+
+- ✏️ **Editar**: permite modificar el contenido del plan existente.
+- 📑 **Detalles**: accede a la vista completa del plan y sus etapas.
+- 🗑️ **Eliminar**: permite borrar el plan del sistema (generalmente con confirmación previa).
+
+&nbsp;
+
+[![Listado de Planes de Tratamiento](https://github.com/user-attachments/assets/afd27e1c-bdb6-425c-bc43-370a75cc06b0)](https://github.com/user-attachments/assets/afd27e1c-bdb6-425c-bc43-370a75cc06b0)
+
+&nbsp;
+
+---
+
+
+
 
 
 
