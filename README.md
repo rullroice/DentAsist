@@ -50,6 +50,19 @@ Uno de los módulos más importantes es el de **Odontólogos**, donde se gestion
 &nbsp;
 
 ---
+## 📋 Detalles del Turno
+
+Desde el módulo de Odontólogos también es posible acceder a los **detalles de cada turno asignado**. Esta vista permite conocer información clave como la fecha, duración, estado del turno, así como los datos del paciente y del odontólogo correspondiente.
+
+Además, desde esta misma pantalla se pueden realizar acciones como **editar** la información del turno o **volver al listado general**.
+
+&nbsp;
+
+![Opcion - Detalles de turno](https://github.com/user-attachments/assets/f6e511ab-0370-4908-9513-fc105d7bdba9)
+
+&nbsp;
+
+---
 
 
 
