@@ -186,6 +186,34 @@ Una vez ingresada la información, el usuario podrá:
 &nbsp;
 
 ---
+---
+
+## ✏️ Editar Cliente
+
+El sistema permite modificar la información de un cliente previamente registrado mediante el formulario de **edición de datos**.
+
+Esta vista se accede desde el botón **Editar** disponible en el listado de clientes, y muestra un formulario con los campos previamente completados, listos para actualizar:
+
+- **Nombre**
+- **RUT**
+- **Teléfono**
+- **Correo electrónico**
+- **Dirección**
+
+Acciones disponibles:
+
+-  **Guardar cambios**: actualiza los datos del cliente en el sistema.
+-  **Cancelar**: descarta las modificaciones realizadas.
+-  **Volver al listado**: regresa a la vista general de clientes.
+
+&nbsp;
+
+![Opcion - Editar paciente](https://github.com/user-attachments/assets/6327f585-d361-4816-8904-e67cde6b0541)
+
+&nbsp;
+
+---
+
 
 
 
