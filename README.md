@@ -615,9 +615,9 @@ Desde esta sección es posible:
 
 Acciones disponibles por cada fila:
 
-- ✏️ **Editar** tratamiento
-- 📄 **Detalles** del tratamiento
-- 🗑️ **Eliminar** registro
+- **Editar** tratamiento
+- **Detalles** del tratamiento
+- **Eliminar** registro
 
 Además, se incluye el botón:
 
