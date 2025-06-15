@@ -383,6 +383,33 @@ Una vez completados los datos, se puede:
 
 ---
 
+## ✏️ Editar Plan de Tratamiento
+
+Desde esta vista es posible modificar los datos principales de un plan de tratamiento ya registrado. Se accede haciendo clic en el botón **Editar** desde el listado general o desde los detalles de un cliente.
+
+### Campos disponibles:
+
+- **Paciente**: Visualiza el nombre del cliente asociado (no editable si ya está vinculado).
+- **Odontólogo**: Profesional tratante a cargo del plan.
+- **Fecha de creación**: Fecha en que se registró el plan.
+- **Observaciones generales**: Comentarios sobre el enfoque, necesidades o estado del tratamiento.
+
+### Acciones:
+
+-  **Guardar cambios**: actualiza los datos del plan en el sistema.
+-  **Cancelar**: descarta los cambios realizados.
+-  **Volver al listado**: regresa a la vista general sin editar.
+
+&nbsp;
+
+![Opcion - Editar un plan](https://github.com/user-attachments/assets/cdd97d97-417d-4480-acb9-859249e55e5b)
+
+
+&nbsp;
+
+
+
+
 
 
 
