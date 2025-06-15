@@ -452,7 +452,7 @@ Se muestran los datos principales:
 
 ---
 
-### 🪜 Pasos del plan de tratamiento
+### Pasos del plan de tratamiento
 
 Aquí se listan los tratamientos (o pasos) que conforman el plan. Para cada uno puedes:
 
