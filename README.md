@@ -35,13 +35,21 @@ Más abajo, tendrás acceso a los distintos **módulos de registro y visualizaci
 
 [![Módulos - Menú](https://github.com/user-attachments/assets/c69c61db-4080-428a-9a1d-103af3d85e87)](https://github.com/user-attachments/assets/c69c61db-4080-428a-9a1d-103af3d85e87)
 
-&nbsp;
+---
+
+## 🧑‍⚕️ Módulo de Odontólogos
+
 Luego de familiarizarte con el menú principal y sus opciones generales, puedes ingresar a los distintos módulos según tu perfil de usuario.
 
-Uno de los módulos más importantes es el de Odontólogos, donde se gestiona la información de los profesionales, su especialidad, y se configuran ciertos permisos o accesos.
+Uno de los módulos más importantes es el de **Odontólogos**, donde se gestiona la información de los profesionales, su especialidad, y se configuran ciertos permisos o accesos.
 
 &nbsp;
 
-![Menu -Lista de Odontologos](https://github.com/user-attachments/assets/32396596-a407-454c-8754-100fa901dfc4)
+[![Menu - Lista de Odontólogos](https://github.com/user-attachments/assets/32396956-a807-454c-8754-100f0901dcf4)](https://github.com/user-attachments/assets/32396956-a807-454c-8754-100f0901dcf4)
+
+&nbsp;
+
+---
+
 
 
