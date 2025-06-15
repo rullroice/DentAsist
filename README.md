@@ -250,7 +250,7 @@ Antes de ejecutar la eliminación, el sistema presenta los datos del cliente par
 
 Desde el listado principal de clientes, es posible acceder a la vista detallada de cada uno para consultar su información general, planes de tratamiento y turnos históricos.
 
-### 🧾 Información General
+### Información General
 
 Se muestra la información básica del cliente:
 
