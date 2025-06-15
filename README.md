@@ -839,6 +839,18 @@ En esta pantalla se confirma la eliminación definitiva de un turno. Es una acci
 
 ---
 
+## ✅ Conclusión del Recorrido
+
+Este recorrido visual tuvo como objetivo presentar de manera clara y concisa el funcionamiento general de **DentAssist**, destacando las principales funcionalidades de cada módulo: desde la gestión de turnos, pacientes y odontólogos, hasta el seguimiento de tratamientos y su progreso clínico.
+
+Gracias a esta estructura intuitiva y ordenada, el sistema permite optimizar las tareas administrativas y clínicas en centros odontológicos, facilitando la comunicación y la organización entre profesionales y pacientes.
+
+Esperamos que esta guía haya sido de utilidad para familiarizarte con la plataforma.  
+Para cualquier duda, sugerencia o mejora, no dudes en comunicarte con el equipo de desarrollo o soporte.
+
+---
+
+
 
 
 
