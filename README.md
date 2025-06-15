@@ -575,7 +575,6 @@ Esta vista se muestra cuando el usuario decide eliminar un paso específico del 
 
 ---
 
----
 
 ### Acciones disponibles:
 
