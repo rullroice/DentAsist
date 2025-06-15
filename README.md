@@ -632,6 +632,27 @@ Además, se incluye el botón:
 
 ---
 
+##  Registrar Nuevo Tratamiento
+
+Esta vista permite ingresar un nuevo procedimiento clínico al catálogo de tratamientos disponibles. Los tratamientos registrados aquí podrán ser utilizados luego en los planes de tratamiento de los pacientes.
+
+---
+
+### Acciones disponibles:
+
+- **Registrar**: guarda el tratamiento en el sistema y lo añade al catálogo.
+- **Volver al Catálogo**: regresa a la vista general sin guardar.
+
+&nbsp;
+
+
+![Opcion - Crear](https://github.com/user-attachments/assets/c238daf3-c032-4439-89ab-c4e58e632922)
+
+&nbsp;
+
+---
+
+
 
 
 
