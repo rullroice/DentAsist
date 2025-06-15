@@ -754,6 +754,38 @@ El módulo de **gestión de turnos** permite administrar las citas médicas entr
 
 ---
 
+## Crear un Nuevo Turno
+
+Desde esta pantalla puedes registrar una nueva cita entre un paciente y un odontólogo. Esta operación es fundamental para organizar la agenda clínica del centro.
+
+---
+
+### Campos requeridos
+
+- **Fecha y Hora**: selecciona el momento exacto del turno.
+- **Duración (minutos)**: especifica el tiempo estimado de atención.
+- **Paciente**: elige desde el listado de pacientes disponibles.
+- **Odontólogo**: selecciona el profesional a cargo del turno.
+- **Estado**: define el estado inicial (ej. Programado).
+- **Descripción**: puedes agregar detalles relevantes sobre el motivo o contexto del turno.
+
+---
+
+### Acciones
+
+- **Crear nuevo turno**: guarda la información ingresada.
+- **Volver a la lista**: cancela el registro y retorna al listado principal de turnos.
+
+&nbsp;
+
+
+![Opcion - Crear un turno](https://github.com/user-attachments/assets/e8e9f9f3-c85b-4227-84a8-2cfe39590edb)
+
+&nbsp;
+
+---
+
+
 
 
 
