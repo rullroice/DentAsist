@@ -109,6 +109,26 @@ Una vez realizada la edición, puedes elegir entre:
 
 ---
 
+## 📆 Agenda Semanal del Odontólogo
+
+Desde la vista de detalles del odontólogo, puedes acceder a su **agenda semanal**, la cual muestra los turnos programados entre dos fechas específicas. Esta pantalla permite:
+
+- Visualizar los turnos por día de la semana.
+- Ver detalles clave como la hora, paciente asignado, estado y descripción.
+- Acceder rápidamente a las acciones de **Editar** o **ver Detalles** del turno.
+- Navegar entre semanas usando los botones: **Semana Anterior**, **Hoy** y **Semana Siguiente**.
+
+Si no hay turnos programados en un día, el sistema lo indicará con claridad.
+
+&nbsp;
+
+![Opcion - Ver agenda](https://github.com/user-attachments/assets/d4fac73c-042e-4ffa-8529-8226156afa16)
+
+&nbsp;
+
+---
+
+
 
 
 
