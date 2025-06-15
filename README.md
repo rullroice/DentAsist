@@ -408,6 +408,35 @@ Desde esta vista es posible modificar los datos principales de un plan de tratam
 &nbsp;
 ---
 
+## 🗑️ Eliminar Plan de Tratamiento
+
+Cuando se selecciona la opción **Eliminar** desde el listado de planes, el sistema muestra una pantalla de **confirmación** para validar esta acción crítica.
+
+### ⚠️ Advertencia importante
+
+> La eliminación de un plan de tratamiento también borrará **todos los pasos asociados** a ese plan. Esta acción no se puede deshacer.
+
+### Datos del plan mostrados para revisión:
+
+- **Paciente**
+- **Odontólogo asignado**
+- **Fecha de creación**
+- **Observaciones generales**
+
+### Acciones disponibles:
+
+- **Eliminar**: ejecuta la eliminación total del plan y sus pasos.
+- **Cancelar y volver al listado**: permite regresar sin hacer cambios.
+
+&nbsp;
+
+![Opcion - Eliminar un plan](https://github.com/user-attachments/assets/f56d0a38-9272-4725-b07e-07576ab7762c)
+
+&nbsp;
+
+---
+
+
 
 
 
