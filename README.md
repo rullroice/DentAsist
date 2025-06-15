@@ -546,6 +546,29 @@ Esta vista permite registrar un nuevo **paso clínico** dentro de un plan de tra
 ---
 
 
+## 🔍 Detalles del Paso de Tratamiento
+
+Esta pantalla permite consultar toda la información relacionada a un paso específico dentro de un plan de tratamiento. Es útil para revisiones clínicas, auditoría interna o simplemente monitoreo del progreso del paciente.
+
+
+---
+
+### Acciones disponibles:
+
+- **Editar**: permite modificar los datos del paso.
+- **Volver al listado de pasos**: regresa a la vista general de todos los pasos registrados.
+- **Volver al plan de tratamiento**: vuelve a la vista del plan completo al que pertenece el paso.
+
+&nbsp;
+
+
+![Opcion - Editar un nuevo paso](https://github.com/user-attachments/assets/a6662867-2f50-4e1e-8819-4bbfdaa9d43c)
+
+&nbsp;
+
+---
+
+
 
 
 
