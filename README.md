@@ -350,7 +350,8 @@ Desde esta vista se puede consultar, filtrar y gestionar todos los **planes de t
 
 &nbsp;
 
-[![Listado de Planes de Tratamiento](https://github.com/user-attachments/assets/afd27e1c-bdb6-425c-bc43-370a75cc06b0)](https://github.com/user-attachments/assets/afd27e1c-bdb6-425c-bc43-370a75cc06b0)
+
+![Menu - Plan](https://github.com/user-attachments/assets/1d0c68bc-a42f-4cfb-882b-6fb6b9d64026)
 
 &nbsp;
 
