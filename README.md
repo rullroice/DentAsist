@@ -652,6 +652,29 @@ Esta vista permite ingresar un nuevo procedimiento clínico al catálogo de trat
 
 ---
 
+## ✏️ Editar Tratamiento
+
+Desde esta vista es posible modificar los datos de un tratamiento previamente registrado en el sistema. Es útil para actualizar descripciones, nombres o ajustes de precio estimado.
+
+
+---
+
+### Acciones disponibles:
+
+- **Guardar cambios**: actualiza el tratamiento con la nueva información.
+- **Cancelar**: descarta cualquier cambio.
+- **Volver al catálogo**: regresa a la vista principal del módulo.
+
+&nbsp;
+
+
+![Opcion - Editar](https://github.com/user-attachments/assets/611e02dc-8ce9-42c9-be61-5c8c6c67c0ab)
+
+&nbsp;
+
+---
+
+
 
 
 
