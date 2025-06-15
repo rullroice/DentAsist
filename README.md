@@ -23,7 +23,7 @@ Al ingresar al sistema, podrás visualizar el **menú principal**, donde se encu
 
 &nbsp;
 
-[![Principal - Menú](https://github.com/user-attachments/assets/7dd3e4c3-363e-4f63-a9cf-dbb65d59161e)](https://github.com/user-attachments/assets/7dd3e4c3-363e-4f63-a9cf-dbb65d59161e)
+![Principal - Menu](https://github.com/user-attachments/assets/c35d7592-796c-4bbd-93a3-786a43ae022a)
 
 &nbsp;
 
