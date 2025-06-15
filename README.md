@@ -128,6 +128,42 @@ Si no hay turnos programados en un día, el sistema lo indicará con claridad.
 
 ---
 
+## ✅ Fin del Recorrido del Odontólogo
+
+Con esto finaliza el recorrido por el módulo de **Odontólogos**, donde se abordaron las funcionalidades principales como la edición de datos, gestión de turnos, revisión de planes de tratamiento y consulta de la agenda semanal.
+
+---
+
+## 🧑‍🦱 Módulo de Pacientes
+
+En esta sección exploraremos el módulo de **Pacientes**, donde se puede registrar, consultar y gestionar toda la información clínica y personal de los pacientes atendidos en el sistema.
+
+Desde este módulo podrás:
+
+- Registrar un nuevo paciente.
+- Editar los datos de un paciente.
+- Eliminimar a un pacinte.
+- Ver los detalles de un paciente.
+- Ver el listado de pacientes.
+
+&nbsp;
+
+---
+
+## 🧑‍💼 Módulo de Clientes
+
+El módulo de **Clientes** permite visualizar y administrar la información básica de todas las personas registradas en el sistema.
+
+&nbsp;
+
+![Menu - Pacientes](https://github.com/user-attachments/assets/5616751c-ef16-4bdc-a7c4-573678f1d2ad)
+
+&nbsp;
+
+---
+
+
+
 
 
 
