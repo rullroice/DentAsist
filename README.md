@@ -336,7 +336,7 @@ Desde esta vista se puede consultar, filtrar y gestionar todos los **planes de t
 ### Funcionalidades principales:
 
 - **Crear Nuevo Plan de Tratamiento**
-- 📄 **Listado detallado**: muestra la siguiente información para cada plan:
+- 📄 **Listado detallado**
   - Paciente
   - Odontólogo asignado
   - Fecha de creación del plan
