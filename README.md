@@ -370,8 +370,8 @@ Esta vista permite registrar un nuevo plan de tratamiento desde cero, asociándo
 
 Una vez completados los datos, se puede:
 
-- ➕ **Crear plan**: para guardar el nuevo registro.
-- 🔙 **Volver al Listado**: para regresar a la vista general sin crear el plan.
+- **Crear plan**: para guardar el nuevo registro.
+- **Volver al Listado**: para regresar a la vista general sin crear el plan.
 
 
 &nbsp;
