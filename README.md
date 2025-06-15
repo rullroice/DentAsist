@@ -19,3 +19,6 @@ Antes de ejecutar el sistema, asegúrate de que los siguientes programas-extensi
 
 ---
 # 👨‍💻 Guía rápida de uso
+Nada mas entrar se visualiza el menu principal 
+
+![Principal - Menu](https://github.com/user-attachments/assets/7dd3e4c3-363e-4f63-a9cf-dbb655d9161e)
