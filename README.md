@@ -811,7 +811,6 @@ Desde esta sección puedes modificar la información previamente registrada de u
 
 En esta pantalla se confirma la eliminación definitiva de un turno. Es una acción irreversible, por lo que el sistema muestra un resumen con los datos del turno para evitar errores.
 
----
 
 
 ---
