@@ -84,6 +84,32 @@ Desde esta pantalla, también es posible:
 
 ---
 
+## ✏️ Editar Odontólogo
+
+Desde la vista de detalles del odontólogo, puedes acceder al formulario de **edición de datos personales y profesionales** del odontólogo seleccionado.
+
+Esta pantalla permite actualizar los siguientes campos:
+
+- **Nombre**
+- **Matrícula**
+- **Especialidad**
+- **Correo electrónico**
+
+Una vez realizada la edición, puedes elegir entre:
+
+- **Guardar cambios** para actualizar la información en el sistema.
+- **Cancelar** para descartar cualquier modificación.
+- **Volver al listado** para regresar al panel general sin realizar cambios.
+
+&nbsp;
+
+![Opcion - Editar](https://github.com/user-attachments/assets/7b1a1afb-1a32-47e5-b77e-e60cae7d26f2)
+
+&nbsp;
+
+---
+
+
 
 
 
