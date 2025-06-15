@@ -792,8 +792,6 @@ Desde esta sección puedes modificar la información previamente registrada de u
 ---
 
 
----
-
 ### ✅ Acciones disponibles
 
 - **Guardar cambios**: aplica las modificaciones.
