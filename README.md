@@ -214,6 +214,39 @@ Acciones disponibles:
 
 ---
 
+## 🗑️ Eliminar Cliente
+
+Cuando se selecciona la opción **Eliminar** desde el listado de clientes, el sistema muestra una pantalla de **confirmación**, en la cual se solicita al usuario verificar que realmente desea eliminar ese registro.
+
+### ⚠️ Advertencia Importante
+
+> La eliminación de un cliente puede afectar otros elementos del sistema, como los **planes de tratamiento** o **turnos asociados**.  
+> Esta acción es irreversible y requiere confirmación manual.
+
+### Vista previa de los datos mostrados
+
+Antes de ejecutar la eliminación, el sistema presenta los datos del cliente para revisión:
+
+- Nombre  
+- RUT  
+- Teléfono  
+- Correo electrónico  
+- Dirección
+
+### Acciones disponibles
+
+- **Eliminar**: borra definitivamente al cliente del sistema.  
+- **Cancelar y volver al listado**: abandona la operación sin hacer cambios.
+
+&nbsp;
+
+![Opcion - Eliminar paciente](https://github.com/user-attachments/assets/fb466057-9b92-4dd4-80c2-126dbe8f3a3a)
+
+&nbsp;
+
+---
+
+
 
 
 
