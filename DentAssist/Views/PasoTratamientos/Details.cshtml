@@ -4,75 +4,71 @@
     ViewData["Title"] = "Detalles del Paso de Tratamiento";
 }
 
-<h1>Detalles del Paso de Tratamiento</h1>
+<div class="container main-content pt-4">
+    <!-- Título y encabezado -->
+    <div class="d-flex align-items-center justify-content-between flex-wrap mb-4">
+        <h2 class="mb-0 text-primary">Detalles del paso de tratamiento</h2>
+        <a asp-action="Index" class="btn btn-secondary">Volver al listado de pasos</a>
+    </div>
 
-<div>
-    <h4>Paso de Tratamiento</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.PlanTratamiento)
-        </dt>
-        <dd class="col-sm-9">
-            <a asp-controller="PlanTratamientos" asp-action="Details" asp-route-id="@Model.PlanTratamiento.Id">@Model.PlanTratamiento.Paciente.Nombre - Plan #@Model.IdPlanTratamiento</a>
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.Tratamiento)
-        </dt>
-        <dd class="col-sm-9">
-            @Html.DisplayFor(model => model.Tratamiento.Nombre)
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.Secuencia)
-        </dt>
-        <dd class="col-sm-9">
-            @Html.DisplayFor(model => model.Secuencia)
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.FechaEstimada)
-        </dt>
-        <dd class="col-sm-9">
-            @Model.FechaEstimada.ToString("dd/MM/yyyy")
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.FechaRealizado)
-        </dt>
-        <dd class="col-sm-9">
-            @if (Model.FechaRealizado.HasValue)
-            {
-                @Model.FechaRealizado.Value.ToString("dd/MM/yyyy")
-            }
-            else
-            {
-                <span>N/A</span>
-            }
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.Estado)
-        </dt>
-        <dd class="col-sm-9">
-            <span class="badge @(Model.Estado == "Realizado" ? "badge-success" : Model.Estado == "Cancelado" ? "badge-danger" : Model.Estado == "Pendiente" ? "badge-warning" : "badge-secondary")">
-                @Html.DisplayFor(model => model.Estado)
-            </span>
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.ObservacionesClinicas)
-        </dt>
-        <dd class="col-sm-9">
-            @if (!string.IsNullOrEmpty(Model.ObservacionesClinicas))
-            {
-                @Html.DisplayFor(model => model.ObservacionesClinicas)
-            }
-            else
-            {
-                <span>N/A</span>
-            }
-        </dd>
-    </dl>
-</div>
-<div class="mt-4">
-    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Editar</a>
-    <a asp-action="Index" class="btn btn-secondary ml-2">Volver al Listado de Pasos</a>
-    @* Opcional: Volver al plan de tratamiento específico si el ID del plan está disponible *@
-    <a asp-controller="PlanTratamientos" asp-action="Details" asp-route-id="@Model.IdPlanTratamiento" class="btn btn-info ml-2">Volver al Plan de Tratamiento</a>
+    <div class="row">
+        <div class="col-md-8 col-lg-7">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-primary mb-4">Información del paso de tratamiento</h5>
+                    <dl class="row mb-0">
+                        <dt class="col-sm-4 text-secondary">Plan de Tratamiento</dt>
+                        <dd class="col-sm-8">
+                            <a asp-controller="PlanTratamientos" asp-action="Details" asp-route-id="@Model.PlanTratamiento.Id">
+                                @Model.PlanTratamiento.Paciente.Nombre - Plan #@Model.IdPlanTratamiento
+                            </a>
+                        </dd>
+                        <dt class="col-sm-4 text-secondary">Tratamiento</dt>
+                        <dd class="col-sm-8">@Model.Tratamiento.Nombre</dd>
+                        <dt class="col-sm-4 text-secondary">Secuencia</dt>
+                        <dd class="col-sm-8">@Model.Secuencia</dd>
+                        <dt class="col-sm-4 text-secondary">Fecha estimada</dt>
+                        <dd class="col-sm-8">@Model.FechaEstimada.ToString("dd/MM/yyyy")</dd>
+                        <dt class="col-sm-4 text-secondary">Fecha realizado</dt>
+                        <dd class="col-sm-8">
+                            @if (Model.FechaRealizado.HasValue)
+                            {
+                                @Model.FechaRealizado.Value.ToString("dd/MM/yyyy")
+                            }
+                            else
+                            {
+                                <span class="text-muted">N/A</span>
+                            }
+                        </dd>
+                        <dt class="col-sm-4 text-secondary">Estado</dt>
+                        <dd class="col-sm-8">
+                            <span class="badge @(Model.Estado == "Realizado" ? "badge-success" : Model.Estado == "Cancelado" ? "badge-danger" : Model.Estado == "Pendiente" ? "badge-warning" : "badge-secondary")">
+                                @Model.Estado
+                            </span>
+                        </dd>
+                        <dt class="col-sm-4 text-secondary">Observaciones clínicas</dt>
+                        <dd class="col-sm-8">
+                            @if (!string.IsNullOrEmpty(Model.ObservacionesClinicas))
+                            {
+                                @Model.ObservacionesClinicas
+                            }
+                            else
+                            {
+                                <span class="text-muted">N/A</span>
+                            }
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botones de acción -->
+    <div class="mt-4">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Editar</a>
+        <a asp-action="Index" class="btn btn-outline-secondary ml-3">Volver al listado de pasos</a>
+        <a asp-controller="PlanTratamientos" asp-action="Details" asp-route-id="@Model.IdPlanTratamiento" class="btn btn-info ml-3">
+            Volver al plan de tratamiento
+        </a>
+    </div>
 </div>

@@ -4,54 +4,52 @@
     ViewData["Title"] = "Eliminar Plan de Tratamiento";
 }
 
-<h1>Eliminar Plan de Tratamiento</h1>
+<div class="container main-content pt-4">
+    <!-- Título y advertencia -->
+    <div class="mb-4">
+        <h2 class="text-danger">Eliminar plan de tratamiento</h2>
+        <h4 class="mt-3 mb-2">¿Estás seguro de que quieres eliminar este plan de tratamiento?</h4>
+        <div class="alert alert-warning" role="alert">
+            <strong>Advertencia:</strong> La eliminación de este plan también eliminará todos sus pasos de tratamiento asociados.
+        </div>
+    </div>
 
-<h3>¿Estás seguro de que quieres eliminar este plan de tratamiento?</h3>
-<div class="alert alert-warning" role="alert">
-    Advertencia: La eliminación de este plan también eliminará todos sus pasos de tratamiento asociados.
-</div>
-<div>
-    <h4>Plan de Tratamiento</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.Paciente)
-        </dt>
-        <dd class="col-sm-9">
-            @Html.DisplayFor(model => model.Paciente.Nombre)
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.Odontologo)
-        </dt>
-        <dd class="col-sm-9">
-            @Html.DisplayFor(model => model.Odontologo.Nombre)
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.FechaCreacion)
-        </dt>
-        <dd class="col-sm-9">
-            @Model.FechaCreacion.ToString("dd/MM/yyyy")
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.ObservacionesGenerales) @* CAMBIO: ObservacionesGenerales *@
-        </dt>
-        <dd class="col-sm-9">
-            @* Manejo de ObservacionesGenerales (si es nullable string) *@
-            @if (!string.IsNullOrEmpty(Model.ObservacionesGenerales))
-            {
-                @Html.DisplayFor(model => model.ObservacionesGenerales)
-            }
-            else
-            {
-                <span>N/A</span>
-            }
-        </dd>
-        @* Eliminadas referencias a FechaFinalizacionEstimada y TotalEstimado *@
-    </dl>
+    <!-- Datos del plan en card -->
+    <div class="row mb-4">
+        <div class="col-md-8 col-lg-7">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-primary mb-4">Datos del plan de tratamiento</h5>
+                    <dl class="row mb-0">
+                        <dt class="col-sm-4 text-secondary">Paciente</dt>
+                        <dd class="col-sm-8">@Model.Paciente.Nombre</dd>
+                        <dt class="col-sm-4 text-secondary">Odontólogo</dt>
+                        <dd class="col-sm-8">@Model.Odontologo.Nombre</dd>
+                        <dt class="col-sm-4 text-secondary">Fecha de creación</dt>
+                        <dd class="col-sm-8">@Model.FechaCreacion.ToString("dd/MM/yyyy")</dd>
+                        <dt class="col-sm-4 text-secondary">Observaciones generales</dt>
+                        <dd class="col-sm-8">
+                            @if (!string.IsNullOrEmpty(Model.ObservacionesGenerales))
+                            {
+                                @Model.ObservacionesGenerales
+                            }
+                            else
+                            {
+                                <span class="text-muted">N/A</span>
+                            }
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Botones de acción -->
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Eliminar" class="btn btn-danger" />
-        <a asp-action="Index" class="btn btn-secondary ml-2">Cancelar y Volver al Listado</a>
+        <div class="form-group">
+            <input type="submit" value="Eliminar" class="btn btn-danger" />
+            <a asp-action="Index" class="btn btn-outline-secondary ml-3">Cancelar y volver al listado</a>
+        </div>
     </form>
 </div>

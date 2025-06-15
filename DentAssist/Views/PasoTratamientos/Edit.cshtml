@@ -4,64 +4,78 @@
     ViewData["Title"] = "Editar Paso de Tratamiento";
 }
 
-<h1>Editar Paso de Tratamiento</h1>
+<div class="container main-content pt-4">
+    <!-- Título y botón de regreso -->
+    <div class="d-flex align-items-center justify-content-between flex-wrap mb-4">
+        <h2 class="mb-0 text-primary">Editar paso de tratamiento</h2>
+        <a asp-action="Index" class="btn btn-secondary">Volver al listado de pasos</a>
+    </div>
 
-<h4>Paso de Tratamiento</h4>
-<hr />
-<div class="row">
-    <div class="col-md-6">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            @* El Plan de Tratamiento y Tratamiento asociado no deberían cambiarse en Edit, solo mostrarse *@
-            <div class="form-group">
-                <label class="control-label">Plan de Tratamiento</label>
-                <input class="form-control" value="@Model.PlanTratamiento.Paciente.Nombre - Plan #@Model.IdPlanTratamiento" readonly />
-                <input type="hidden" asp-for="IdPlanTratamiento" /> @* Aseguramos que el ID se envíe *@
-            </div>
-            <div class="form-group">
-                <label class="control-label">Tratamiento</label>
-                <input class="form-control" value="@Model.Tratamiento.Nombre" readonly />
-                <input type="hidden" asp-for="IdTratamiento" /> @* Aseguramos que el ID se envíe *@
-            </div>
+    <div class="row">
+        <div class="col-md-8 col-lg-7">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-primary mb-4">Datos del paso</h5>
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                        <input type="hidden" asp-for="Id" />
 
-            <div class="form-group">
-                <label asp-for="Secuencia" class="control-label"></label>
-                <input asp-for="Secuencia" type="number" class="form-control" min="1" />
-                <span asp-validation-for="Secuencia" class="text-danger"></span>
+                        <!-- Plan y Tratamiento solo lectura -->
+                        <div class="form-group">
+                            <label class="control-label">Plan de Tratamiento</label>
+                            <input class="form-control" value="@Model.PlanTratamiento.Paciente.Nombre - Plan #@Model.IdPlanTratamiento" readonly />
+                            <input type="hidden" asp-for="IdPlanTratamiento" />
+                        </div>
+                        <div class="form-group mt-3">
+                            <label class="control-label">Tratamiento</label>
+                            <input class="form-control" value="@Model.Tratamiento.Nombre" readonly />
+                            <input type="hidden" asp-for="IdTratamiento" />
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="Secuencia">Secuencia</label>
+                            <input asp-for="Secuencia" type="number" class="form-control" min="1" />
+                            <span asp-validation-for="Secuencia" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label asp-for="FechaEstimada">Fecha estimada</label>
+                            <input asp-for="FechaEstimada" type="date" class="form-control" />
+                            <span asp-validation-for="FechaEstimada" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label asp-for="FechaRealizado">Fecha realizado</label>
+                            <input asp-for="FechaRealizado" type="date" class="form-control" value="@(Model.FechaRealizado.HasValue? Model.FechaRealizado.Value.ToString("yyyy-MM-dd") : string.Empty)" />
+                            <span asp-validation-for="FechaRealizado" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label asp-for="Estado">Estado</label>
+                            <select asp-for="Estado" class="form-control">
+                                <option value="Pendiente">Pendiente</option>
+                                <option value="Completado">Completado</option>
+                                <option value="Cancelado">Cancelado</option>
+                            </select>
+                            <span asp-validation-for="Estado" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label asp-for="ObservacionesClinicas">Observaciones clínicas</label>
+                            <textarea asp-for="ObservacionesClinicas" class="form-control"></textarea>
+                            <span asp-validation-for="ObservacionesClinicas" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <input type="submit" value="Guardar cambios" class="btn btn-primary" />
+                            <a asp-action="Index" class="btn btn-outline-secondary ml-3">Cancelar</a>
+                            <a asp-controller="PlanTratamientos" asp-action="Details" asp-route-id="@Model.IdPlanTratamiento" class="btn btn-info ml-3">
+                                Volver al plan de tratamiento
+                            </a>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="FechaEstimada" class="control-label"></label>
-                <input asp-for="FechaEstimada" type="date" class="form-control" />
-                <span asp-validation-for="FechaEstimada" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaRealizado" class="control-label"></label>
-                <input asp-for="FechaRealizado" type="date" class="form-control" value="@(Model.FechaRealizado.HasValue? Model.FechaRealizado.Value.ToString("yyyy-MM-dd") : string.Empty)" />
-                <span asp-validation-for="FechaRealizado" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Estado" class="control-label"></label>
-                <select asp-for="Estado" class="form-control">
-                    <option value="Pendiente">Pendiente</option>
-                    <option value="Completado">Completado</option>
-                    <option value="Cancelado">Cancelado</option>
-                </select>
-                <span asp-validation-for="Estado" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ObservacionesClinicas" class="control-label"></label>
-                <textarea asp-for="ObservacionesClinicas" class="form-control"></textarea>
-                <span asp-validation-for="ObservacionesClinicas" class="text-danger"></span>
-            </div>
-            <div class="form-group mt-3">
-                <input type="submit" value="Guardar Cambios" class="btn btn-primary" />
-                <a asp-action="Index" class="btn btn-secondary ml-2">Volver al Listado de Pasos</a>
-                <a asp-controller="PlanTratamientos" asp-action="Details" asp-route-id="@Model.IdPlanTratamiento" class="btn btn-info ml-2">Volver al Plan de Tratamiento</a>
-            </div>
-        </form>
+        </div>
     </div>
 </div>
+
 
 @section Scripts {
     @{

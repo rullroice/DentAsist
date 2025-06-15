@@ -4,53 +4,52 @@
     ViewData["Title"] = "Detalles del Turno";
 }
 
-<h1>Detalles del Turno</h1>
+<div class="container main-content pt-4">
+    <div class="mb-4">
+        <h2 class="text-primary">Detalles del turno</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-lg-7">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-primary mb-4">Información del turno</h5>
+                    <dl class="row mb-0">
+                        <dt class="col-sm-5 text-secondary">Fecha y hora</dt>
+                        <dd class="col-sm-7">@Model.FechaHora.ToString("dd/MM/yyyy HH:mm")</dd>
 
-<div>
-    <h4>Turno</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.FechaHora)
-        </dt>
-        <dd class="col-sm-9">
-            @Model.FechaHora.ToString("dd/MM/yyyy HH:mm")
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.DuracionMinutos)
-        </dt>
-        <dd class="col-sm-9">
-            @Html.DisplayFor(model => model.DuracionMinutos) minutos
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.Estado)
-        </dt>
-        <dd class="col-sm-9">
-            <span class="badge @(Model.Estado == "Realizado" ? "badge-success" : Model.Estado == "Cancelado" ? "badge-danger" : Model.Estado == "Confirmado" ? "badge-primary" : "badge-secondary")">
-                @Html.DisplayFor(model => model.Estado)
-            </span>
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.Descripcion)
-        </dt>
-        <dd class="col-sm-9">
-            @Html.DisplayFor(model => model.Descripcion)
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.Paciente)
-        </dt>
-        <dd class="col-sm-9">
-            <a asp-controller="Pacientes" asp-action="Details" asp-route-id="@Model.Paciente.Id">@Html.DisplayFor(model => model.Paciente.Nombre)</a>
-        </dd>
-        <dt class="col-sm-3">
-            @Html.DisplayNameFor(model => model.Odontologo)
-        </dt>
-        <dd class="col-sm-9">
-            <a asp-controller="Odontologos" asp-action="Details" asp-route-id="@Model.Odontologo.Id">@Html.DisplayFor(model => model.Odontologo.Nombre)</a>
-        </dd>
-    </dl>
-</div>
-<div class="mt-4">
-    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Editar</a>
-    <a asp-action="Index" class="btn btn-secondary ml-2">Volver al Listado</a>
+                        <dt class="col-sm-5 text-secondary">Duración</dt>
+                        <dd class="col-sm-7">@Model.DuracionMinutos min</dd>
+
+                        <dt class="col-sm-5 text-secondary">Estado</dt>
+                        <dd class="col-sm-7">
+                            <span class="badge @(Model.Estado == "Realizado" ? "badge-success" : Model.Estado == "Cancelado" ? "badge-danger" : Model.Estado == "Confirmado" ? "badge-primary" : "badge-secondary")">
+                                @Model.Estado
+                            </span>
+                        </dd>
+
+                        <dt class="col-sm-5 text-secondary">Descripción</dt>
+                        <dd class="col-sm-7">@Model.Descripcion</dd>
+
+                        <dt class="col-sm-5 text-secondary">Paciente</dt>
+                        <dd class="col-sm-7">
+                            <a asp-controller="Pacientes" asp-action="Details" asp-route-id="@Model.Paciente.Id">
+                                @Model.Paciente?.Nombre
+                            </a>
+                        </dd>
+                        <dt class="col-sm-5 text-secondary">Odontólogo</dt>
+                        <dd class="col-sm-7">
+                            <a asp-controller="Odontologos" asp-action="Details" asp-route-id="@Model.Odontologo.Id">
+                                @Model.Odontologo?.Nombre
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Editar</a>
+        <a asp-action="Index" class="btn btn-outline-secondary ml-3">Volver al listado</a>
+    </div>
 </div>

@@ -4,48 +4,60 @@
     ViewData["Title"] = "Editar Plan de Tratamiento";
 }
 
-<h1>Editar Plan de Tratamiento</h1>
+<div class="container main-content pt-4">
+    <!-- Título y regreso -->
+    <div class="d-flex align-items-center justify-content-between flex-wrap mb-4">
+        <h2 class="mb-0 text-primary">Editar plan de tratamiento</h2>
+        <a asp-action="Index" class="btn btn-secondary">Volver al listado</a>
+    </div>
 
-<h4>Plan de Tratamiento</h4>
-<hr />
-<div class="row">
-    <div class="col-md-6">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="IdPaciente" class="control-label"></label>
-                <select asp-for="IdPaciente" class="form-control" asp-items="ViewBag.IdPaciente">
-                    <option value="">Seleccionar Paciente</option>
-                </select>
-                <span asp-validation-for="IdPaciente" class="text-danger"></span>
+    <div class="row">
+        <div class="col-md-7 col-lg-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h4 class="card-title text-primary mb-4">Datos del plan</h4>
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="form-group">
+                            <label asp-for="IdPaciente">Paciente</label>
+                            <select asp-for="IdPaciente" class="form-control" asp-items="ViewBag.IdPaciente">
+                                <option value="">Seleccionar paciente</option>
+                            </select>
+                            <span asp-validation-for="IdPaciente" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="IdOdontologo">Odontólogo</label>
+                            <select asp-for="IdOdontologo" class="form-control" asp-items="ViewBag.IdOdontologo">
+                                <option value="">Seleccionar odontólogo</option>
+                            </select>
+                            <span asp-validation-for="IdOdontologo" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="FechaCreacion">Fecha de creación</label>
+                            <input asp-for="FechaCreacion" type="date" class="form-control" />
+                            <span asp-validation-for="FechaCreacion" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="ObservacionesGenerales">Observaciones generales</label>
+                            <textarea asp-for="ObservacionesGenerales" class="form-control"></textarea>
+                            <span asp-validation-for="ObservacionesGenerales" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <input type="submit" value="Guardar cambios" class="btn btn-primary" />
+                            <a asp-action="Index" class="btn btn-outline-secondary ml-3">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="IdOdontologo" class="control-label"></label>
-                <select asp-for="IdOdontologo" class="form-control" asp-items="ViewBag.IdOdontologo">
-                    <option value="">Seleccionar Odontólogo</option>
-                </select>
-                <span asp-validation-for="IdOdontologo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaCreacion" class="control-label"></label>
-                <input asp-for="FechaCreacion" type="date" class="form-control" />
-                <span asp-validation-for="FechaCreacion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ObservacionesGenerales" class="control-label"></label> @* CAMBIO: ObservacionesGenerales *@
-                <textarea asp-for="ObservacionesGenerales" class="form-control"></textarea> @* CAMBIO: ObservacionesGenerales *@
-                <span asp-validation-for="ObservacionesGenerales" class="text-danger"></span> @* CAMBIO: ObservacionesGenerales *@
-            </div>
-            @* Eliminadas referencias a FechaFinalizacionEstimada y TotalEstimado *@
-            <div class="form-group mt-3">
-                <input type="submit" value="Guardar Cambios" class="btn btn-primary" />
-                <a asp-action="Index" class="btn btn-secondary ml-2">Volver al Listado</a>
-            </div>
-        </form>
+        </div>
     </div>
 </div>
-
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
