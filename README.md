@@ -591,6 +591,48 @@ Esta vista se muestra cuando el usuario decide eliminar un paso específico del 
 
 ---
 
+## ✅ Fin del Módulo de Progreso de Tratamiento
+
+Con esto concluye el recorrido por el módulo de **Progreso de Tratamiento**, donde se documentó cómo añadir, consultar, editar y eliminar cada paso clínico dentro de un plan.
+
+---
+
+## 💊 Módulo de Tratamientos
+
+El módulo de **Tratamientos** funciona como un **catálogo general** donde se gestionan todos los procedimientos clínicos que pueden ser utilizados dentro de los planes de tratamiento.
+
+Desde esta sección es posible:
+
+- Visualizar los tratamientos ya registrados.
+- Registrar nuevos tratamientos.
+- Editar información como nombre, descripción o precio.
+- Eliminar tratamientos que ya no se utilicen.
+- Consultar detalles individuales de cada tratamiento.
+
+---
+
+### 📋 Catálogo de Tratamientos
+
+Acciones disponibles por cada fila:
+
+- ✏️ **Editar** tratamiento
+- 📄 **Detalles** del tratamiento
+- 🗑️ **Eliminar** registro
+
+Además, se incluye el botón:
+
+- **Registrar Nuevo Tratamiento**: para ingresar un nuevo procedimiento al catálogo.
+
+&nbsp;
+
+
+![Menu - Tratamientos](https://github.com/user-attachments/assets/525e4512-54bd-4ab6-a717-3d195f3ad0ca)
+
+&nbsp;
+
+---
+
+
 
 
 
