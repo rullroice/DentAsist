@@ -162,6 +162,32 @@ El módulo de **Clientes** permite visualizar y administrar la información bás
 
 ---
 
+## 📝 Crear Nuevo Cliente
+
+El sistema permite registrar nuevos clientes mediante un formulario sencillo y directo. Para acceder a esta vista, se debe hacer clic en el botón **"Crear Nuevo Cliente"** desde el listado principal.
+
+Este formulario solicita los siguientes datos obligatorios para completar el registro:
+
+- **Nombre:** Nombre completo del cliente.
+- **RUT:** Número de identificación del cliente.
+- **Teléfono:** Número de contacto.
+- **Email:** Correo electrónico del cliente.
+- **Dirección:** Domicilio o ubicación del cliente.
+
+Una vez ingresada la información, el usuario podrá:
+
+- Presionar el botón **Crear** para guardar los datos en el sistema.
+- Usar el botón **Volver al Listado** para regresar sin realizar cambios.
+
+&nbsp;
+
+![Opcion - Crear un paciente](https://github.com/user-attachments/assets/4384ebac-9bab-4cb9-b7cb-7014e3f1026c)
+
+&nbsp;
+
+---
+
+
 
 
 
