@@ -45,7 +45,7 @@ Uno de los módulos más importantes es el de **Odontólogos**, donde se gestion
 
 &nbsp;
 
-[![Menu - Lista de Odontólogos](https://github.com/user-attachments/assets/32396956-a807-454c-8754-100f0901dcf4)](https://github.com/user-attachments/assets/32396956-a807-454c-8754-100f0901dcf4)
+![Menu -Lista de Odontologos](https://github.com/user-attachments/assets/cc1ca9e8-049b-4203-b738-e9837cd8c668)
 
 &nbsp;
 
