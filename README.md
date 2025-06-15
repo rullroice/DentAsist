@@ -785,6 +785,31 @@ Desde esta pantalla puedes registrar una nueva cita entre un paciente y un odont
 
 ---
 
+## ✏️ Editar Turno
+
+Desde esta sección puedes modificar la información previamente registrada de un turno. Esto es útil para actualizar el estado, cambiar de profesional o ajustar detalles como fecha, duración o descripción.
+
+---
+
+
+---
+
+### ✅ Acciones disponibles
+
+- **Guardar cambios**: aplica las modificaciones.
+- **Cancelar**: descarta cualquier cambio y vuelve al listado.
+- **Volver al listado** (parte superior derecha): alternativa rápida para salir sin editar.
+
+&nbsp;
+
+
+![Opcion - Editar un turno](https://github.com/user-attachments/assets/3f7a3bbd-e5ec-4b36-b159-65b373735d6b)
+
+&nbsp;
+
+---
+
+
 
 
 
