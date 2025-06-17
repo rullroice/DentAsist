@@ -13,6 +13,7 @@ namespace DentAssist.Models
         public string Nombre { get; set; }
 
         [StringLength(500, ErrorMessage = "La descripción no puede exceder los 500 caracteres.")]
+        [Required(ErrorMessage = "La descripción es obligatoria.")]
         public string Descripcion { get; set; } // Descripción detallada del tratamiento
 
         [Required(ErrorMessage = "El precio estimado es obligatorio.")]

@@ -29,6 +29,7 @@ namespace DentAssist.Models
         public DateTime FechaEstimada { get; set; }
 
         [DataType(DataType.Date)]
+        [Required(ErrorMessage = "La fecha de realización del paso es obligatoria.")]
         public DateTime? FechaRealizado { get; set; } // Actual completion date (can be null)
 
         [Required(ErrorMessage = "El estado del paso es obligatorio.")]
@@ -36,6 +37,7 @@ namespace DentAssist.Models
         public string Estado { get; set; } = string.Empty; // Added default initialization to fix CS8618 warning for non-nullable string
 
         [StringLength(500, ErrorMessage = "Las observaciones clínicas no pueden exceder los 500 caracteres.")]
+        [Required(ErrorMessage = "Las observaciones clínicas son obligatorias.")]
         public string? ObservacionesClinicas { get; set; } // Changed to nullable string for flexibility, as StringLength doesn't imply requiredness
     }
 }

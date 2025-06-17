@@ -27,6 +27,7 @@ namespace DentAssist.Models
         public string Email { get; set; }
 
         [StringLength(200, ErrorMessage = "La dirección no puede exceder los 200 caracteres.")]
+        [Required(ErrorMessage = "La dirección es obligatoria.")]
         public string Direccion { get; set; }
 
         // Propiedades de navegación para relaciones (uno a muchos)

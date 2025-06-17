@@ -26,6 +26,7 @@ namespace DentAssist.Models
         public DateTime FechaCreacion { get; set; }
 
         [StringLength(1000, ErrorMessage = "Las observaciones generales no pueden exceder los 1000 caracteres.")]
+        [Required(ErrorMessage = "Las observaciones generales son obligatorias.")]
         public string? ObservacionesGenerales { get; set; } // También lo hice anulable, ya que StringLength ya maneja su longitud
 
         // Propiedad de navegación para los pasos individuales del plan

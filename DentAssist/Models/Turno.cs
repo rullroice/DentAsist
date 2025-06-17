@@ -32,6 +32,7 @@ namespace DentAssist.Models
         public string Estado { get; set; } = string.Empty; // Inicialización para evitar CS8618 si no se le da un valor por defecto.
 
         [StringLength(500, ErrorMessage = "La descripción no puede exceder los 500 caracteres.")]
+        [Required(ErrorMessage = "La descripción es obligatoria.")]
         public string? Descripcion { get; set; } // ¡CAMBIO AQUÍ! Ahora es anulable (string?)
     }
 }
